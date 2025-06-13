@@ -64,11 +64,11 @@ The AI model uses the following features:
 | Issue Age at Sprint End | Days between issue creation and sprint end |
 | Activity Level | Comment count |
 
-The core of the prediction engine is a Logistic Regression model from scikit-learn, chosen for its:
-- Compatibility with both numerical and categorical features via preprocessing
-- Interpretability through feature weights and class probabilities
-- Fast training and good performance on moderately sized datasets
-- Robustness and simplicity for real-world applications
+The core of the prediction engine is a Random Forest Classifier from scikit-learn, chosen for its:
+- Ability to handle both numerical and categorical features
+- Feature importance insights
+- Robust performance with limited data
+- Resistance to overfitting
 
 ## Challenges
 
