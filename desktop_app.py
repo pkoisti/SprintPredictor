@@ -15,25 +15,32 @@ from src.data_processing import process_issues_to_df
 from dotenv import load_dotenv
 from sklearn.model_selection import train_test_split
 
-# Load environment variables
+# Load environment variables from .env file
 load_dotenv()
 
 class MainWindow(QWidget):
+    """
+    The main window of our application.
+    Shows buttons for training and prediction, and displays results.
+    """
     def __init__(self):
         super().__init__()
+        # Set up the window
         self.setWindowTitle('Jira Sprint Success Predictor')
         self.resize(1500, 800)
-        self.model = None
-        self.train_data = None
-        self.train_path = None
-        self.predict_data = None
-        self.predict_path = None
-        self.jira_configured = self.check_jira_config()
+        
+        # Initialize variables
+        self.model = None  # Our machine learning model
+        self.train_data = None  # Data used to train the model
+        self.train_path = None  # Path to training data file
+        self.predict_data = None  # Data we want to make predictions for
+        self.predict_path = None  # Path to prediction data file
+        self.jira_configured = self.check_jira_config()  # Check if we can use Jira
 
-        # Main vertical layout
+        # Create the main layout
         self.layout = QVBoxLayout()
 
-        # Top: Combined controls row
+        # Create buttons for CSV operations
         self.combined_controls_layout = QHBoxLayout()
         self.train_csv_button = QPushButton('Train Model from CSV')
         self.train_csv_button.clicked.connect(self.train_model_from_csv)
@@ -43,7 +50,7 @@ class MainWindow(QWidget):
         self.combined_controls_layout.addWidget(self.predict_csv_button)
         self.layout.addLayout(self.combined_controls_layout)
 
-        # Second row: Jira buttons
+        # Create buttons for Jira operations
         self.jira_controls_layout = QHBoxLayout()
         self.train_jira_button = QPushButton('Train from Jira')
         self.train_jira_button.clicked.connect(self.train_from_jira)
@@ -53,12 +60,12 @@ class MainWindow(QWidget):
         self.jira_controls_layout.addWidget(self.predict_jira_button)
         self.layout.addLayout(self.jira_controls_layout)
 
-        # Progress bar for data fetch (below Jira buttons)
+        # Add a progress bar for Jira operations
         self.progress_bar = QProgressBar()
         self.progress_bar.setVisible(False)
         self.layout.addWidget(self.progress_bar)
 
-        # Info labels
+        # Add labels to show what data is loaded
         self.info_layout = QHBoxLayout()
         self.train_label = QLabel('No training data loaded')
         self.info_layout.addWidget(self.train_label)
@@ -66,12 +73,12 @@ class MainWindow(QWidget):
         self.info_layout.addWidget(self.predict_label)
         self.layout.addLayout(self.info_layout)
 
-        # Split main area into left and right
+        # Split the window into left and right panels
         self.split_layout = QHBoxLayout()
 
-        # Left panel: Model accuracy (top) and confusion matrix (bottom)
+        # Left panel: Shows how well the model performs
         self.left_panel = QVBoxLayout()
-        # Model accuracy (classification report)
+        # Top: Model accuracy report
         self.metrics_box = QGroupBox('Model Accuracy')
         self.metrics_box_layout = QVBoxLayout()
         self.report_text = QTextEdit()
@@ -81,7 +88,7 @@ class MainWindow(QWidget):
         self.metrics_box_layout.addWidget(self.report_text)
         self.metrics_box.setLayout(self.metrics_box_layout)
         self.left_panel.addWidget(self.metrics_box)
-        # Confusion matrix
+        # Bottom: Confusion matrix
         self.confusion_box = QGroupBox('Confusion Matrix')
         self.confusion_box_layout = QVBoxLayout()
         self.figure = plt.figure(figsize=(4, 3))
@@ -92,7 +99,7 @@ class MainWindow(QWidget):
         self.left_panel.addWidget(self.confusion_box)
         self.split_layout.addLayout(self.left_panel, 1)
 
-        # Right panel: Prediction results table (initialized empty)
+        # Right panel: Shows predictions
         self.right_panel = QVBoxLayout()
         self.table = QTableWidget()
         self.table.setRowCount(0)
@@ -105,7 +112,7 @@ class MainWindow(QWidget):
         self.setLayout(self.layout)
 
     def check_jira_config(self):
-        """Check if Jira credentials are properly configured."""
+        """Check if we have all the required Jira login information"""
         required_vars = ["JIRA_DOMAIN", "JIRA_EMAIL", "JIRA_API_TOKEN"]
         missing_vars = [var for var in required_vars if not os.getenv(var)]
         if missing_vars:
@@ -113,7 +120,7 @@ class MainWindow(QWidget):
         return True
 
     def show_jira_config_error(self):
-        """Show error dialog for missing Jira configuration."""
+        """Show an error message if Jira login information is missing"""
         message = """Jira credentials are not configured. Please set the following environment variables:
 - JIRA_DOMAIN
 - JIRA_EMAIL
@@ -123,6 +130,7 @@ You can set these in a .env file or in your system environment variables."""
         self.show_selectable_dialog('Jira Configuration Error', message)
 
     def train_model_from_csv(self):
+        """Let the user select a CSV file to train the model"""
         file_path, _ = QFileDialog.getOpenFileName(self, "Select Training CSV File", "data", "CSV Files (*.csv)")
         if file_path:
             try:
@@ -136,27 +144,35 @@ You can set these in a .env file or in your system environment variables."""
                 self.show_selectable_dialog('Error', f'Failed to load CSV: {e}')
     
     def train_model(self):
+        """Train the machine learning model with the loaded data"""
         if self.train_data is not None:
             df = self.train_data.copy()
             if 'sprint_success' not in df.columns:
                 self.show_selectable_dialog('Error', 'Training CSV must contain a "sprint_success" column.')
                 return
             
+            # Use only the columns the model needs
             model_columns = [
                 "issue_type", "assignee", "original_estimate", "was_in_previous_sprint",
                 "days_in_sprint", "comment_count", "tasks_per_assignee", "sprint_success"
             ]
-            df = df[model_columns] #only use the columns that the model uses
-            # Split into train/test for accuracy/confusion matrix
+            df = df[model_columns]
+            
+            # Split data into training and testing sets
             X = df.drop(columns='sprint_success')
             y = df['sprint_success']
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
+            
+            # Create and train the model
             self.model = SprintSuccessModel()
             self.model.train(X_train, y_train)
+            
+            # Show how well the model performs
             self.show_accuracy(X_test, y_test)
             self.show_selectable_dialog('Model Trained', 'Model training complete!')
 
     def predict_from_csv(self):
+        """Let the user select a CSV file to make predictions"""
         file_path, _ = QFileDialog.getOpenFileName(self, "Select Prediction CSV File", "data", "CSV Files (*.csv)")
         if file_path:
             try:
@@ -170,6 +186,7 @@ You can set these in a .env file or in your system environment variables."""
                 self.show_selectable_dialog('Error', f'Failed to load CSV: {e}')
 
     def predict(self):
+        """Make predictions using the trained model"""
         if self.model is None:
             self.show_selectable_dialog('Error', 'Train the model first!')
             return
@@ -180,23 +197,25 @@ You can set these in a .env file or in your system environment variables."""
             self.show_predictions(df, predictions)
     
     def show_predictions(self, df, predictions):
+        """Show the predictions in a table"""
         if len(predictions) != len(df):
             self.show_selectable_dialog('Prediction Error', f'Number of predictions ({len(predictions)}) does not match number of rows ({len(df)}).')
             return
         
-        # Define display columns and their headers
+        # Set up the table columns
         display_columns = ['Issue Type', 'Key', 'Summary', 'Predicted Outcome']
         self.table.setRowCount(len(df))
         self.table.setColumnCount(len(display_columns))
         self.table.setHorizontalHeaderLabels(display_columns)
         
-        # Map DataFrame columns to display columns
+        # Map column names from our data to display names
         column_mapping = {
             'Issue Type': 'issue_type',
             'Key': 'key',
             'Summary': 'summary'
         }
         
+        # Fill in the table with predictions
         for i, row in df.iterrows():
             # Set issue type
             self.table.setItem(i, 0, QTableWidgetItem(str(row['issue_type'])))
@@ -208,11 +227,15 @@ You can set these in a .env file or in your system environment variables."""
             icon = '✅' if predictions[i] == 1 else '❌'
             self.table.setItem(i, 3, QTableWidgetItem(f"{icon} {'Will Complete' if predictions[i] == 1 else 'Will Not Complete'}"))
         
-        # Adjust column widths
+        # Make the table look nice
         self.table.resizeColumnsToContents()
         self.table.setVisible(True)
 
     def show_accuracy(self, X, y):
+        """
+        Shows how well our model performs on test data.
+        Creates a report showing accuracy and a confusion matrix.
+        """
         from sklearn.metrics import classification_report, confusion_matrix
         
         #Classification report
@@ -237,6 +260,10 @@ You can set these in a .env file or in your system environment variables."""
         self.canvas.setVisible(True)
 
     def show_selectable_dialog(self, title, message):
+        """
+        Shows a popup window with a message that can be copied.
+        Used to show errors or important information to the user.
+        """
         dlg = QDialog(self)
         dlg.setWindowTitle(title)
         layout = QVBoxLayout()
@@ -253,6 +280,11 @@ You can set these in a .env file or in your system environment variables."""
         dlg.exec_()
 
     def train_from_jira(self):
+        """
+        Trains the model using data from Jira.
+        Lets the user select a board and number of sprints to use for training.
+        """
+        # Check if we have Jira login information
         if not self.jira_configured:
             self.show_jira_config_error()
             return
@@ -307,9 +339,15 @@ You can set these in a .env file or in your system environment variables."""
             self.show_selectable_dialog('Jira Error', str(e))
 
     def predict_from_jira(self):
+        """
+        Makes predictions for tasks in a current Jira sprint.
+        Lets the user select a board and sprint to predict for.
+        """
+        # Check if we have Jira login information
         if not self.jira_configured:
             self.show_jira_config_error()
             return
+        
         try:
             self.progress_bar.setValue(0)
             self.progress_bar.setVisible(True)

@@ -7,36 +7,38 @@ from typing import Optional, List, Dict, Any
 
 class JiraClient:
     """
-    Handles authentication and requests to Jira REST API.
-    Fetches sprint and issue data.
+    A class that helps us talk to Jira and get sprint data.
+    It handles things like logging in and getting information about tasks.
     """
     def __init__(self, domain=None, email=None, api_token=None, project_key=None, board_id=None):
+        # Get login information from environment variables or parameters
         self.domain = domain or os.getenv("JIRA_DOMAIN")
         self.email = email or os.getenv("JIRA_EMAIL")
         self.api_token = api_token or os.getenv("JIRA_API_TOKEN")
         self.project_key = project_key or os.getenv("JIRA_PROJECT_KEY")
         self.board_id = board_id or os.getenv("JIRA_BOARD_ID")
+        
+        # Set up login credentials
         self.auth = HTTPBasicAuth(self.email, self.api_token)
         self.headers = {"Accept": "application/json"}
         
-        # Rate limiting
+        # Make sure we don't send too many requests too quickly
         self.last_request_time = 0
-        self.min_request_interval = 0.5  # seconds between requests
+        self.min_request_interval = 0.5  # wait 0.5 seconds between requests
         
-        # Validate configuration
+        # Check if we have all the required login information
         self._validate_config()
     
     def _validate_config(self):
-        """Validate the Jira configuration."""
+        """Check if we have all the required login information"""
         if not all([self.domain, self.email, self.api_token]):
             raise ValueError("Missing required Jira configuration. Please set JIRA_DOMAIN, JIRA_EMAIL, and JIRA_API_TOKEN.")
         
-        # Validate domain format
         if not self.domain.endswith('.atlassian.net'):
             raise ValueError("Invalid Jira domain. Must end with .atlassian.net")
     
     def _rate_limit(self):
-        """Implement rate limiting for API calls."""
+        """Wait a bit between requests to be nice to Jira's servers"""
         current_time = time.time()
         time_since_last_request = current_time - self.last_request_time
         if time_since_last_request < self.min_request_interval:
@@ -44,7 +46,7 @@ class JiraClient:
         self.last_request_time = time.time()
     
     def _make_request(self, method: str, url: str, **kwargs) -> Dict[str, Any]:
-        """Make an API request with rate limiting and error handling."""
+        """Send a request to Jira and handle any errors"""
         self._rate_limit()
         try:
             response = requests.request(method, url, headers=self.headers, auth=self.auth, **kwargs)
@@ -62,13 +64,14 @@ class JiraClient:
 
     def get_boards(self) -> List[Dict[str, Any]]:
         """
-        Fetch all Jira boards (paginated) and return only scrum boards.
-        If JIRA_PROJECT_KEY is set in .env, only boards for that project are returned.
+        Get all scrum boards from Jira.
+        If a project key is set, only get boards for that project.
         """
         url = f"https://{self.domain}/rest/agile/1.0/board"
         boards = []
         start_at = 0
         
+        # Jira gives us data in pages, so we need to get all pages
         while True:
             data = self._make_request('GET', url, params={
                 "maxResults": 50,
@@ -80,14 +83,14 @@ class JiraClient:
                 break
             start_at += len(data.get("values", []))
         
-        # Only return boards of type 'scrum'
+        # Only keep scrum boards
         scrum_boards = [b for b in boards if b.get("type") == "scrum"]
         if self.project_key:
             scrum_boards = [b for b in scrum_boards if b.get("location", {}).get("projectKey") == self.project_key]
         return scrum_boards
 
     def get_sprints(self, board_id: Optional[str] = None, count: int = 30) -> List[Dict[str, Any]]:
-        """Get sprints for a board with rate limiting."""
+        """Get the most recent finished sprints for a board"""
         board_id = board_id or self.board_id
         url = f"https://{self.domain}/rest/agile/1.0/board/{board_id}/sprint"
         
@@ -104,7 +107,7 @@ class JiraClient:
         return all_sprints[-count:]
 
     def get_open_sprints(self, board_id: Optional[str] = None) -> List[Dict[str, Any]]:
-        """Get open sprints for a board with rate limiting."""
+        """Get all current and future sprints for a board"""
         board_id = board_id or self.board_id
         url = f"https://{self.domain}/rest/agile/1.0/board/{board_id}/sprint"
         
@@ -117,14 +120,17 @@ class JiraClient:
         return data.get("values", [])
 
     def get_issues_for_sprint(self, sprint_id: str) -> List[Dict[str, Any]]:
-        """Get issues for a sprint with rate limiting."""
+        """Get all tasks in a sprint"""
         url = f"https://{self.domain}/rest/agile/1.0/sprint/{sprint_id}/issue"
         
         data = self._make_request('GET', url, params={"maxResults": 100})
         return data.get("issues", [])
 
     def parse_issue(self, issue: Dict[str, Any], sprint_end: Optional[pd.Timestamp]) -> Dict[str, Any]:
-        """Parse issue data with validation."""
+        """
+        Convert a Jira task into a format our machine learning model can use.
+        Gets information like when it was created, when it was finished, and its status.
+        """
         try:
             fields = issue["fields"]
             created = pd.to_datetime(fields["created"])
@@ -132,9 +138,11 @@ class JiraClient:
             time_spent = fields.get("timespent")
             original_estimate = fields.get("timeoriginalestimate")
             
+            # Check if the task was completed
             status_name = fields["status"]["name"].lower()
             is_closed = status_name in ["done", "closed", "resolved"]
             
+            # Create a dictionary with all the information we need
             return {
                 "key": issue["key"],
                 "summary": fields.get("summary", ""),
