@@ -1,32 +1,33 @@
 # Jira Sprint Success Predictor
 
-Final project for the Building AI course
+Building AI course project
 
 ## Summary
 
-A machine learning application that predicts whether Jira issues will be completed within a sprint. Using historical sprint data and AI, it helps teams make better sprint planning decisions. The application includes a demo mode that works with CSV files, making it easy to explore without requiring Jira credentials.
+A machine learning application that predicts whether planned Jira issues can be completed within a sprint. Using historical sprint data and AI, it helps teams make better sprint planning decisions. The application includes a demo mode that works with CSV files, making it easy to explore without requiring Jira credentials.
 
 ## Background
 
-Sprint planning in agile teams often faces several challenges:
-* Difficulty in estimating which issues can be completed within a sprint
-* Overcommitting to too many tasks
-* Not accounting for historical performance patterns
-* Lack of data-driven decision making in sprint planning
+Sprint planning in agile teams is a collaborative meeting to decide which tasks to complete in the upcoming sprint based on team capacity and priorities.
 
-This project aims to help teams make better sprint planning decisions by using AI to predict task completion based on historical data.
+However, this critical step often faces several challenges:
+* Difficulty in estimating which issues are realistically achievable within the sprint
+* Overcommitting to too many tasks
+* Failing to account for historical team performance
+
+ I’ve seen firsthand how sprint planning often leads to overcommitment and missed deadlines. Jira, being one of the most widely used tools for tracking Agile development, provides rich data on issues, assignees, time estimates, and sprint history. This project uses that data with AI to predict task completion likelihood, helping teams plan more realistically and sustainably.
 
 ## How is it used?
 
 The application can be used in two ways:
 
-1. **Demo Mode (Recommended)** - Works with CSV files:
-   - Use the included `mock_dev.csv` file to try out the application
+1. **Demo** - Works with CSV files:
+   - Use the included `mock_data.csv` file to try out the application
    - Train the model and make predictions using CSV files
    - View predictions and model performance metrics
    - No Jira setup required
 
-2. **Jira Integration Mode** - For teams using Jira:
+2. **Jira Integration** - For teams using Jira:
    - Train the model with your team's historical sprint data
    - Get predictions for new sprint issues
    - Requires Jira credentials and API access
@@ -35,20 +36,20 @@ The application can be used in two ways:
 
 - 🤖 Machine learning model for sprint success prediction
 - 📊 Visual model evaluation with confusion matrix
-- 📈 Sprint completion predictions
-- 🎯 Issue-level success probability
+- 🎯 Issue-level sprint success prediction (yes/no outcome)
 - 🖥️ Desktop GUI application
 - 🔄 Optional Jira integration
 
-## Data and AI
+## Data and AI techniques
 
-The application uses two types of data:
-1. CSV files (primary method)
-   - Use the included `mock_dev.csv` for testing
+The provided application uses two types of data:
+1. CSV files
+   - Use the included `mock_data.csv` for testing
    - Create your own CSV files with the same format
 2. Jira data (optional)
    - Requires Jira credentials
    - Fetches data from your Jira instance
+   - Option to save fetched data into CSV for later use
 
 The AI model uses the following features:
 
@@ -58,24 +59,18 @@ The AI model uses the following features:
 | Sprint History | Whether the task was in a previous sprint |
 | Issue Type | Type of the task (Story, Bug, etc.) |
 | Assignee Load | Number of tasks per assignee |
-| Sprint Duration | Days allocated in sprint |
+| Issue Age at Sprint End | Days between issue creation and sprint end |
 | Activity Level | Comment count |
 
-The core of the prediction engine is a Random Forest Classifier from scikit-learn, chosen for its:
-- Ability to work with both numbers (like time estimates) and categories (like issue types)
-- Clear explanation of which factors most influence sprint success
-- Good performance even with small amounts of historical data
-- Reliable predictions that don't overfit to past patterns
+The core of the prediction engine is a Logistic Regression model from scikit-learn, chosen for its:
+- Compatibility with both numerical and categorical features via preprocessing
+- Interpretability through feature weights and class probabilities
+- Fast training and good performance on moderately sized datasets
+- Robustness and simplicity for real-world applications
 
 ## Challenges
 
-The project has some limitations and ethical considerations:
-* Requires sufficient historical data for accurate predictions
-* May reinforce existing biases in estimation patterns
-* Cannot account for unexpected external factors affecting sprint completion
-* Does not replace human judgment in sprint planning
-* Could potentially be misused to create unrealistic performance expectations
-* Limited by the quality and consistency of input data
+This project does not account for unexpected disruptions such as team illness, changing priorities, or external dependencies. It relies on historical data, which may reinforce existing biases or outdated practices. The model cannot assess task complexity or human factors like motivation or collaboration. It supports, but does not replace, human judgment in sprint planning. Its effectiveness also depends on the quality and consistency of Jira data.
 
 ## What next?
 
@@ -83,24 +78,16 @@ Future development possibilities:
 1. Improve prediction accuracy
    - Add more features from Jira data
    - Try different machine learning models
-   - Include team velocity in predictions
 
-2. Enhance user experience
-   - Add visualizations for prediction confidence
-   - Show historical prediction accuracy
-   - Create a web interface
-
-3. Expand functionality
+2. Expand functionality
    - Support more project management tools
    - Add team capacity predictions
    - Include natural language analysis of issue descriptions
 
-4. Make it more accessible
+3. Make it more accessible
    - Create a web-based version
    - Add API for integration with other tools
    - Provide more documentation and examples
-
-Skills needed: Deep learning expertise, web development, UX design
 
 ## Setup and Installation
 
@@ -108,7 +95,7 @@ Skills needed: Deep learning expertise, web development, UX design
 - Python 3.8 or higher
 - PyQt5 for the desktop interface
 
-### Quick Start (Demo Mode)
+### Quick Start 
 
 1. Clone the repository:
 ```bash
@@ -132,7 +119,7 @@ pip install -r requirements.txt
 python desktop_app.py
 ```
 
-5. Use the "Train Model from CSV" button to load `mock_dev.csv`
+5. Use the "Train Model from CSV" button to load `mock_data.csv`
 6. Use the "Predict from CSV" button to make predictions
 
 ### Optional: Jira Integration
@@ -148,9 +135,9 @@ JIRA_PROJECT_KEY=YOUR_PROJECT  # Optional: limit to specific project
 ## Project Structure
 
 ```
-jira-sprint-predictor/
+SprintPredictor/
 ├── data/                  # Data directory
-│   └── mock_dev.csv      # Demo data file
+│   └── mock_data.csv      # Demo data file
 ├── src/                  # Source code
 │   ├── data_processing.py
 │   ├── jira_client.py
@@ -162,14 +149,13 @@ jira-sprint-predictor/
 
 ## Security
 
-- No sensitive data is stored in the repository
 - Jira credentials are stored in `.env` (not committed)
-- Training data and models are excluded from git
+- Jira training data and models are excluded from git
 - All API calls use secure authentication
 
 ## Acknowledgments
 
-* Building AI course by Reaktor Innovations and University of Helsinki
+* Building AI course by MinnaLearn and University of Helsinki
 
 ## License
 
