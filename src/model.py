@@ -12,7 +12,7 @@ import seaborn as sns
 class SprintSuccessModel:
     """
     A machine learning model that predicts whether a task will be completed in a sprint.
-    Uses Logistic Regression with preprocessing for both numerical and categorical data.
+    Uses Random Forest Classifier with preprocessing for both numerical and categorical data.
     """
     def __init__(self):
         # Define which columns contain text data (like task type and assignee)
