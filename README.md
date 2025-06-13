@@ -112,8 +112,8 @@ Skills needed: Deep learning expertise, web development, UX design
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/jira-sprint-predictor.git
-cd jira-sprint-predictor
+git https://github.com/paulakois/SprintPredictor.git
+cd SprintPredictor
 ```
 
 2. Create and activate a virtual environment:
