@@ -121,7 +121,7 @@ python desktop_app.py
 
 ### Optional: Jira Integration
 
-To use with your Jira instance, create a `.env` file with your credentials:
+To enable Jira integration, create a .env file containing your credentials and place it in the project root directory:
 ```
 JIRA_DOMAIN=your-domain.atlassian.net
 JIRA_EMAIL=your-email@company.com
@@ -154,7 +154,7 @@ SprintPredictor/
 
 ## Acknowledgments
 
-* Building AI course by MinnaLearn and University of Helsinki
+Building AI course by MinnaLearn and University of Helsinki
 
 ## License
 
