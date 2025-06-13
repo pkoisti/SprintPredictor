@@ -21,7 +21,7 @@ class SprintSuccessModel:
         # Create a pipeline that:
         # 1. Converts text data to numbers (OneHotEncoder)
         # 2. Scales numerical data (StandardScaler)
-        # 3. Makes predictions (LogisticRegression)
+        # 3. Makes predictions (RandomForestClassifier)
         self.model = Pipeline([
             ("preprocess", ColumnTransformer([
                 ("cat", OneHotEncoder(handle_unknown="ignore"), self.categorical)
