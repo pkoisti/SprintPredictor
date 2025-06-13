@@ -86,11 +86,6 @@ Future development possibilities:
    - Add team capacity predictions
    - Include natural language analysis of issue descriptions
 
-3. Make it more accessible
-   - Create a web-based version
-   - Add API for integration with other tools
-   - Provide more documentation and examples
-
 ## Setup and Installation
 
 ### Prerequisites
@@ -138,15 +133,17 @@ JIRA_PROJECT_KEY=YOUR_PROJECT  # Optional: limit to specific project
 
 ```
 SprintPredictor/
+├── assets/                # Assets directory
+│   └── screenshot.png     # Screenshot of the app
 ├── data/                  # Data directory
 │   └── mock_data.csv      # Demo data file
-├── src/                  # Source code
+├── src/                   # Source code
 │   ├── data_processing.py
 │   ├── jira_client.py
 │   └── model.py
 ├── desktop_app.py        # Main application
 ├── requirements.txt      # Python dependencies
-└── README.md            # This file
+└── README.md             # This file
 ```
 
 ## Security
