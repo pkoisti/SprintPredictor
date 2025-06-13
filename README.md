@@ -32,6 +32,8 @@ The application can be used in two ways:
    - Get predictions for new sprint issues
    - Requires Jira credentials and API access
 
+<img src="assets/screenshot.png" alt="Screenshot of Sprint Success Predictor app interface" width="800"/>
+
 ## Features
 
 - 🤖 Machine learning model for sprint success prediction
