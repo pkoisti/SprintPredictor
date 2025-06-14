@@ -2,16 +2,16 @@
 
 [Building AI](https://buildingai.elementsofai.com/) course project
 
-### AI Support in Project Implementation
+### AI Contribution
 
-This project was developed with the assistance of generative AI. Approximately **95% of the content** — including source code, documentation, and structural design — was generated using a large language models.  
+This project was developed with the assistance of generative AI. Approximately 95% of the content — including source code, documentation, and structural design — was generated using large language models.  
 The human role focused on defining the problem, reviewing AI outputs, validating results, and guiding architectural decisions.
 
 This approach is part of an exploration into AI-augmented software engineering workflows.
 
 ## Summary
 
-A machine learning application that predicts whether planned Jira issues can be completed within a sprint. Using historical sprint data and AI, it helps teams make better sprint planning decisions. The application includes a demo mode that works with CSV files, making it easy to explore without requiring Jira credentials.
+A lightweight machine learning application that predicts the completion likelihood of planned Jira issues within a sprint. By leveraging historical data and model-driven insights, it helps agile teams make more realistic and informed planning decisions. The application includes a demo mode that works with CSV files, making it easy to explore without requiring Jira credentials.
 
 ## Background
 
@@ -103,7 +103,7 @@ Future development possibilities:
 
 1. Clone the repository:
 ```bash
-git https://github.com/paulakois/SprintPredictor.git
+git https://github.com/pkoisti/SprintPredictor.git
 cd SprintPredictor
 ```
 
@@ -162,6 +162,10 @@ SprintPredictor/
 ## Acknowledgments
 
 Building AI course by MinnaLearn and University of Helsinki
+
+## Contributing
+
+This project was developed as part of a personal learning initiative. If you have ideas or feedback, feel free to open an issue or contact the author.
 
 ## License
 
