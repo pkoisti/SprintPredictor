@@ -1,6 +1,13 @@
 # Jira Sprint Success Predictor
 
-Building AI course project
+[Building AI](https://buildingai.elementsofai.com/) course project
+
+### AI Support in Project Implementation
+
+This project was developed with the assistance of generative AI. Approximately **95% of the content** — including source code, documentation, and structural design — was generated using a large language models.  
+The human role focused on defining the problem, reviewing AI outputs, validating results, and guiding architectural decisions.
+
+This approach is part of an exploration into AI-augmented software engineering workflows.
 
 ## Summary
 
