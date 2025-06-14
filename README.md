@@ -140,17 +140,16 @@ JIRA_PROJECT_KEY=YOUR_PROJECT  # Optional: limit to specific project
 
 ```
 SprintPredictor/
-├── assets/                # Assets directory
-│   └── screenshot.png     # Screenshot of the app
-├── data/                  # Data directory
-│   └── mock_data.csv      # Demo data file
-├── src/                   # Source code
+├── assets/                # UI assets
+├── data/                  # Sample and user data
+├── src/                   # Source code modules
 │   ├── data_processing.py
 │   ├── jira_client.py
 │   └── model.py
-├── desktop_app.py        # Main application
-├── requirements.txt      # Python dependencies
-└── README.md             # This file
+├── desktop_app.py         # Main application script
+├── requirements.txt       # Python dependencies
+├── README.md              # Project documentation
+└── .env                   # Place for Jira credentials (not included in repo)
 ```
 
 ## Security
