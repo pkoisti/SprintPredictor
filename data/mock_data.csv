@@ -1,507 +1,507 @@
 issue_type,assignee,original_estimate,was_in_previous_sprint,days_in_sprint,comment_count,tasks_per_assignee,sprint_success,key,summary
-Task,Alice,288000.0,1,28,1,2.0,1,MOCK-1,Implement dark mode toggle #1
-Task,Grace,144000.0,1,11,1,2.0,1,MOCK-2,Optimize app startup time #2
-Bug,Grace,0.0,0,9,8,8.333333333333334,0,MOCK-3,Implement feature flagging system #3
-Task,Grace,28800.0,0,65,2,8.333333333333334,1,MOCK-4,Implement dark mode toggle #4
-Task,Eve,144000.0,1,64,1,8.333333333333334,0,MOCK-5,Integrate third-party analytics SDK #5
-Task,Eve,144000.0,0,65,0,8.333333333333334,1,MOCK-6,Redesign settings panel UI #6
-Sub-task,Frank,28800.0,0,65,0,8.333333333333334,1,MOCK-7,Patch issue in navigation stack #7
-Sub-task,Diana,28800.0,0,65,0,8.333333333333334,1,MOCK-8,Implement feature flagging system #8
-Sub-task,Eve,28800.0,0,65,0,8.333333333333334,1,MOCK-9,Develop onboarding walkthrough #9
-Sub-task,Grace,0.0,0,65,0,8.333333333333334,1,MOCK-10,Implement feature flagging system #10
-Sub-task,Eve,28800.0,0,65,0,8.333333333333334,1,MOCK-11,Patch issue in navigation stack #11
-Sub-task,Charlie,0.0,0,42,0,8.333333333333334,1,MOCK-12,Patch issue in navigation stack #12
-Sub-task,Eve,0.0,0,42,0,8.333333333333334,1,MOCK-13,Refactor Redux state management #13
-Sub-task,Frank,0.0,0,42,0,8.333333333333334,1,MOCK-14,Optimize app startup time #14
-Sub-task,Bob,0.0,0,25,0,8.333333333333334,1,MOCK-15,Implement user authentication flow #15
-Task,Grace,144000.0,0,10,0,8.333333333333334,1,MOCK-16,Implement dark mode toggle #16
-Task,Diana,28800.0,0,65,0,8.333333333333334,1,MOCK-17,Optimize app startup time #17
-Story,Charlie,0.0,1,35,0,8.333333333333334,0,MOCK-18,Implement user authentication flow #18
-Sub-task,Frank,432000.0,1,35,0,8.333333333333334,1,MOCK-19,Redesign settings panel UI #19
-Sub-task,Diana,28800.0,1,9,0,8.333333333333334,0,MOCK-20,Implement user authentication flow #20
-Sub-task,Bob,144000.0,1,35,1,8.333333333333334,0,MOCK-21,Implement dark mode toggle #21
-Sub-task,Frank,144000.0,1,35,0,8.333333333333334,0,MOCK-22,Develop onboarding walkthrough #22
-Sub-task,Hank,0.0,1,25,3,8.333333333333334,0,MOCK-23,Optimize app startup time #23
-Sub-task,Hank,86400.0,1,35,1,8.333333333333334,0,MOCK-24,Implement dark mode toggle #24
-Sub-task,Diana,144000.0,1,35,3,8.333333333333334,0,MOCK-25,Enable offline data sync #25
-Sub-task,Eve,144000.0,1,35,1,8.333333333333334,0,MOCK-26,Integrate third-party analytics SDK #26
-Sub-task,Grace,86400.0,1,-62,0,8.333333333333334,0,MOCK-27,Redesign settings panel UI #27
-Task,Diana,288000.0,1,42,1,3.0,1,MOCK-28,Implement dark mode toggle #28
-Task,Hank,144000.0,1,25,1,3.0,1,MOCK-29,Implement dark mode toggle #29
-Task,Diana,288000.0,1,42,1,3.0,1,MOCK-30,Enable offline data sync #30
-Task,Alice,0.0,0,71,0,3.0,1,MOCK-31,Implement user authentication flow #31
-Sub-task,Grace,144000.0,0,71,1,3.0,0,MOCK-32,Fix crash in notification handler #32
-Sub-task,Hank,432000.0,0,71,1,3.0,0,MOCK-33,Improve accessibility features #33
-Task,Alice,288000.0,0,11,0,3.0,1,MOCK-34,Refactor Redux state management #34
-Task,Eve,28800.0,0,14,8,3.0,0,MOCK-35,Fix crash in notification handler #35
-Task,Hank,144000.0,1,78,1,3.0,0,MOCK-36,Enable offline data sync #36
-Bug,Charlie,0.0,0,9,2,3.0,0,MOCK-37,Improve accessibility features #37
-Bug,Grace,0.0,0,9,1,3.0,0,MOCK-38,Fix crash in notification handler #38
-Task,Grace,57600.0,0,11,5,3.0,0,MOCK-39,Fix crash in notification handler #39
-Task,Bob,144000.0,1,84,1,2.0,0,MOCK-40,Develop onboarding walkthrough #40
-Task,Alice,28800.0,0,104,2,2.0,1,MOCK-41,Patch issue in navigation stack #41
-Task,Eve,144000.0,1,11,2,3.0,1,MOCK-42,Patch issue in navigation stack #42
-Task,Bob,144000.0,1,112,0,3.0,1,MOCK-43,Redesign settings panel UI #43
-Sub-task,Eve,0.0,1,8,0,3.0,1,MOCK-44,Implement feature flagging system #44
-Sub-task,Bob,0.0,1,4,0,3.0,1,MOCK-45,Refactor Redux state management #45
-Sub-task,Hank,0.0,1,0,0,3.0,1,MOCK-46,Enable offline data sync #46
-Task,Hank,288000.0,1,56,1,3.0,1,MOCK-47,Implement user authentication flow #47
-Task,Eve,144000.0,1,25,2,5.0,1,MOCK-48,Patch issue in navigation stack #48
-Task,Bob,144000.0,1,126,0,5.0,1,MOCK-49,Implement user authentication flow #49
-Sub-task,Frank,0.0,1,22,0,5.0,1,MOCK-50,Integrate third-party analytics SDK #50
-Sub-task,Bob,0.0,1,18,0,5.0,1,MOCK-51,Optimize app startup time #51
-Sub-task,Charlie,0.0,1,14,0,5.0,1,MOCK-52,Implement dark mode toggle #52
-Task,Hank,144000.0,1,11,1,5.0,1,MOCK-53,Patch issue in navigation stack #53
-Task,Diana,86400.0,0,70,0,5.0,1,MOCK-54,Implement feature flagging system #54
-Task,Hank,144000.0,0,70,0,5.0,1,MOCK-55,Redesign settings panel UI #55
-Task,Hank,144000.0,1,70,1,5.0,1,MOCK-56,Implement user authentication flow #56
-Task,Diana,144000.0,1,70,0,5.0,1,MOCK-57,Fix crash in notification handler #57
-Bug,Eve,0.0,1,53,8,1.6666666666666667,0,MOCK-58,Develop onboarding walkthrough #58
-Bug,Frank,0.0,1,87,16,1.6666666666666667,0,MOCK-59,Optimize app startup time #59
-Bug,Hank,0.0,0,23,8,1.6666666666666667,0,MOCK-60,Implement user authentication flow #60
-Task,Frank,0.0,0,38,11,1.6666666666666667,1,MOCK-61,Implement feature flagging system #61
-Task,Grace,7200.0,0,3,3,1.6666666666666667,1,MOCK-62,Improve accessibility features #62
-Task,Bob,14400.0,0,3,0,1.6666666666666667,1,MOCK-63,Fix crash in notification handler #63
-Bug,Alice,0.0,1,30,8,1.6666666666666667,0,MOCK-64,Patch issue in navigation stack #64
-Sub-task,Charlie,0.0,1,0,0,1.6666666666666667,1,MOCK-65,Implement user authentication flow #65
-Bug,Frank,86400.0,1,179,49,1.6666666666666667,0,MOCK-66,Integrate third-party analytics SDK #66
-Sub-task,Hank,0.0,1,0,1,1.6666666666666667,1,MOCK-67,Fix crash in notification handler #67
-Task,Alice,144000.0,1,73,1,2.4615384615384617,0,MOCK-68,Integrate third-party analytics SDK #68
-Task,Alice,144000.0,1,65,4,2.4615384615384617,0,MOCK-69,Refactor Redux state management #69
-Bug,Charlie,0.0,0,7,0,2.4615384615384617,0,MOCK-70,Fix crash in notification handler #70
-Bug,Alice,0.0,1,67,8,2.4615384615384617,0,MOCK-71,Implement feature flagging system #71
-Bug,Alice,0.0,1,101,16,2.4615384615384617,0,MOCK-72,Integrate third-party analytics SDK #72
-Bug,Frank,0.0,1,44,8,2.4615384615384617,0,MOCK-73,Redesign settings panel UI #73
-Sub-task,Diana,0.0,1,14,0,2.4615384615384617,1,MOCK-74,Redesign settings panel UI #74
-Story,Alice,0.0,1,170,1,2.4615384615384617,0,MOCK-75,Refactor Redux state management #75
-Sub-task,Charlie,57600.0,1,120,0,2.4615384615384617,1,MOCK-76,Fix crash in notification handler #76
-Story,Bob,144000.0,1,58,0,2.4615384615384617,0,MOCK-77,Refactor Redux state management #77
-Sub-task,Hank,14400.0,1,53,0,2.4615384615384617,1,MOCK-78,Patch issue in navigation stack #78
-Sub-task,Charlie,0.0,1,3,1,2.4615384615384617,1,MOCK-79,Optimize app startup time #79
-Task,Eve,288000.0,1,52,3,2.4615384615384617,0,MOCK-80,Redesign settings panel UI #80
-Task,Bob,14400.0,1,114,3,2.4615384615384617,0,MOCK-81,Improve accessibility features #81
-Bug,Grace,0.0,0,297,4,2.4615384615384617,0,MOCK-82,Patch issue in navigation stack #82
-Bug,Hank,0.0,1,70,5,2.4615384615384617,0,MOCK-83,Implement user authentication flow #83
-Task,Diana,0.0,0,65,0,2.4615384615384617,0,MOCK-84,Patch issue in navigation stack #84
-Task,Hank,0.0,0,297,2,2.4615384615384617,0,MOCK-85,Patch issue in navigation stack #85
-Task,Bob,403200.0,1,80,2,2.4615384615384617,1,MOCK-86,Fix crash in notification handler #86
-Task,Grace,57600.0,0,9,6,2.4615384615384617,0,MOCK-87,Fix crash in notification handler #87
-Bug,Charlie,0.0,0,8,0,2.4615384615384617,0,MOCK-88,Implement feature flagging system #88
-Task,Frank,0.0,0,9,0,2.4615384615384617,0,MOCK-89,Implement feature flagging system #89
-Bug,Hank,0.0,0,9,2,2.4615384615384617,0,MOCK-90,Patch issue in navigation stack #90
-Task,Diana,14400.0,0,7,0,2.4615384615384617,1,MOCK-91,Patch issue in navigation stack #91
-Task,Bob,0.0,1,-18,0,2.4615384615384617,0,MOCK-92,Implement dark mode toggle #92
-Task,Bob,0.0,0,8,7,2.4615384615384617,0,MOCK-93,Develop onboarding walkthrough #93
-Bug,Diana,86400.0,1,193,49,2.4615384615384617,0,MOCK-94,Develop onboarding walkthrough #94
-Sub-task,Hank,0.0,1,14,1,2.4615384615384617,1,MOCK-95,Fix crash in notification handler #95
-Story,Bob,0.0,1,74,1,2.4615384615384617,0,MOCK-96,Develop onboarding walkthrough #96
-Sub-task,Hank,43200.0,1,106,1,2.4615384615384617,0,MOCK-97,Fix crash in notification handler #97
-Sub-task,Grace,14400.0,1,74,0,2.4615384615384617,1,MOCK-98,Implement dark mode toggle #98
-Sub-task,Grace,0.0,1,11,8,2.4615384615384617,0,MOCK-99,Patch issue in navigation stack #99
-Task,Charlie,144000.0,1,80,1,3.789473684210526,0,MOCK-100,Patch issue in navigation stack #100
-Epic,Charlie,0.0,1,10,1,3.789473684210526,1,MOCK-101,Implement user authentication flow #101
-Bug,Alice,0.0,0,88,9,3.789473684210526,0,MOCK-102,Improve accessibility features #102
-Bug,Alice,0.0,1,21,11,3.789473684210526,0,MOCK-103,Redesign settings panel UI #103
-Task,Grace,14400.0,1,4,3,3.789473684210526,0,MOCK-104,Enable offline data sync #104
-Task,Hank,144000.0,1,72,4,3.789473684210526,0,MOCK-105,Enable offline data sync #105
-Bug,Frank,0.0,1,51,8,3.789473684210526,0,MOCK-106,Enable offline data sync #106
-Sub-task,Diana,0.0,1,20,0,3.789473684210526,1,MOCK-107,Integrate third-party analytics SDK #107
-Bug,Bob,0.0,1,2,4,3.789473684210526,0,MOCK-108,Redesign settings panel UI #108
-Sub-task,Grace,0.0,1,1,1,3.789473684210526,0,MOCK-109,Fix crash in notification handler #109
-Sub-task,Grace,0.0,1,1,1,3.789473684210526,0,MOCK-110,Implement feature flagging system #110
-Story,Charlie,0.0,1,177,1,3.789473684210526,0,MOCK-111,Implement user authentication flow #111
-Sub-task,Eve,57600.0,1,127,0,3.789473684210526,1,MOCK-112,Redesign settings panel UI #112
-Story,Grace,144000.0,1,65,0,3.789473684210526,0,MOCK-113,Implement dark mode toggle #113
-Sub-task,Grace,14400.0,1,60,0,3.789473684210526,1,MOCK-114,Implement feature flagging system #114
-Sub-task,Frank,0.0,1,10,1,3.789473684210526,1,MOCK-115,Integrate third-party analytics SDK #115
-Task,Charlie,288000.0,1,58,3,3.789473684210526,0,MOCK-116,Implement feature flagging system #116
-Task,Bob,14400.0,1,121,3,3.789473684210526,0,MOCK-117,Implement user authentication flow #117
-Bug,Eve,0.0,1,77,5,3.789473684210526,0,MOCK-118,Refactor Redux state management #118
-Task,Alice,403200.0,1,87,2,3.789473684210526,1,MOCK-119,Patch issue in navigation stack #119
-Task,Frank,144000.0,1,129,11,3.789473684210526,0,MOCK-120,Integrate third-party analytics SDK #120
-Task,Charlie,0.0,1,184,3,3.789473684210526,0,MOCK-121,Implement user authentication flow #121
-Task,Frank,0.0,1,127,0,3.789473684210526,0,MOCK-122,Improve accessibility features #122
-Task,Charlie,0.0,0,204,2,3.789473684210526,0,MOCK-123,Develop onboarding walkthrough #123
-Task,Eve,0.0,1,8,0,3.789473684210526,0,MOCK-124,Implement dark mode toggle #124
-Task,Eve,28800.0,1,18,3,3.789473684210526,0,MOCK-125,Fix crash in notification handler #125
-Story,Frank,0.0,1,130,2,3.789473684210526,0,MOCK-126,Develop onboarding walkthrough #126
-Sub-task,Eve,288000.0,1,288,9,3.789473684210526,0,MOCK-127,Implement dark mode toggle #127
-Sub-task,Grace,14400.0,1,17,1,3.789473684210526,0,MOCK-128,Refactor Redux state management #128
-Sub-task,Alice,28800.0,1,101,5,3.789473684210526,0,MOCK-129,Refactor Redux state management #129
-Sub-task,Diana,28800.0,1,185,8,3.789473684210526,0,MOCK-130,Redesign settings panel UI #130
-Sub-task,Alice,0.0,1,151,7,3.789473684210526,1,MOCK-131,Implement dark mode toggle #131
-Sub-task,Grace,0.0,1,130,0,3.789473684210526,1,MOCK-132,Redesign settings panel UI #132
-Sub-task,Eve,0.0,1,130,0,3.789473684210526,1,MOCK-133,Optimize app startup time #133
-Sub-task,Bob,0.0,1,-27,1,3.789473684210526,0,MOCK-134,Optimize app startup time #134
-Task,Eve,0.0,1,-11,0,3.789473684210526,0,MOCK-135,Implement dark mode toggle #135
-Task,Bob,0.0,1,84,3,3.789473684210526,0,MOCK-136,Develop onboarding walkthrough #136
-Bug,Bob,0.0,1,65,24,3.789473684210526,0,MOCK-137,Redesign settings panel UI #137
-Bug,Eve,28800.0,0,79,14,3.789473684210526,1,MOCK-138,Implement feature flagging system #138
-Bug,Eve,0.0,1,74,8,3.789473684210526,0,MOCK-139,Refactor Redux state management #139
-Bug,Bob,0.0,0,7,3,3.789473684210526,1,MOCK-140,Develop onboarding walkthrough #140
-Story,Bob,0.0,1,10,7,3.789473684210526,0,MOCK-141,Implement user authentication flow #141
-Sub-task,Grace,14400.0,1,10,2,3.789473684210526,1,MOCK-142,Implement user authentication flow #142
-Sub-task,Charlie,0.0,1,10,0,3.789473684210526,1,MOCK-143,Optimize app startup time #143
-Sub-task,Bob,0.0,1,10,0,3.789473684210526,1,MOCK-144,Fix crash in notification handler #144
-Story,Alice,0.0,1,91,0,3.789473684210526,0,MOCK-145,Improve accessibility features #145
-Sub-task,Eve,432000.0,1,91,0,3.789473684210526,1,MOCK-146,Optimize app startup time #146
-Sub-task,Alice,28800.0,1,65,0,3.789473684210526,0,MOCK-147,Optimize app startup time #147
-Sub-task,Frank,144000.0,1,91,1,3.789473684210526,0,MOCK-148,Implement feature flagging system #148
-Sub-task,Bob,144000.0,1,91,0,3.789473684210526,0,MOCK-149,Redesign settings panel UI #149
-Sub-task,Hank,0.0,1,81,3,3.789473684210526,0,MOCK-150,Implement dark mode toggle #150
-Sub-task,Frank,86400.0,1,91,1,3.789473684210526,0,MOCK-151,Implement user authentication flow #151
-Sub-task,Charlie,144000.0,1,91,3,3.789473684210526,0,MOCK-152,Implement feature flagging system #152
-Sub-task,Alice,144000.0,1,91,1,3.789473684210526,0,MOCK-153,Implement dark mode toggle #153
-Sub-task,Diana,86400.0,1,-6,0,3.789473684210526,0,MOCK-154,Develop onboarding walkthrough #154
-Bug,Bob,0.0,1,17,3,3.789473684210526,0,MOCK-155,Develop onboarding walkthrough #155
-Bug,Charlie,0.0,1,6,1,3.789473684210526,0,MOCK-156,Integrate third-party analytics SDK #156
-Task,Bob,0.0,1,4,2,3.789473684210526,0,MOCK-157,Develop onboarding walkthrough #157
-Task,Alice,0.0,1,4,6,3.789473684210526,0,MOCK-158,Fix crash in notification handler #158
-Task,Eve,14400.0,0,4,0,3.789473684210526,1,MOCK-159,Refactor Redux state management #159
-Task,Diana,0.0,0,4,1,3.789473684210526,1,MOCK-160,Redesign settings panel UI #160
-Bug,Eve,0.0,0,3,0,3.789473684210526,0,MOCK-161,Refactor Redux state management #161
-Bug,Charlie,0.0,1,21,15,3.789473684210526,0,MOCK-162,Redesign settings panel UI #162
-Task,Hank,0.0,0,-1,0,3.789473684210526,1,MOCK-163,Integrate third-party analytics SDK #163
-Bug,Eve,0.0,1,6,3,3.789473684210526,0,MOCK-164,Develop onboarding walkthrough #164
-Story,Eve,0.0,1,81,1,3.789473684210526,0,MOCK-165,Integrate third-party analytics SDK #165
-Sub-task,Frank,43200.0,1,113,1,3.789473684210526,0,MOCK-166,Redesign settings panel UI #166
-Sub-task,Hank,14400.0,1,81,0,3.789473684210526,1,MOCK-167,Enable offline data sync #167
-Sub-task,Diana,0.0,1,18,8,3.789473684210526,0,MOCK-168,Integrate third-party analytics SDK #168
-Task,Grace,86400.0,1,1,0,3.789473684210526,0,MOCK-169,Patch issue in navigation stack #169
-Bug,Bob,0.0,1,7,8,3.789473684210526,0,MOCK-170,Patch issue in navigation stack #170
-Task,Bob,0.0,1,1,0,3.789473684210526,0,MOCK-171,Redesign settings panel UI #171
-Bug,Charlie,0.0,0,22,10,2.6,0,MOCK-172,Enable offline data sync #172
-Task,Charlie,144000.0,1,98,1,2.6,1,MOCK-173,Implement dark mode toggle #173
-Task,Bob,288000.0,1,98,0,2.6,1,MOCK-174,Patch issue in navigation stack #174
-Sub-task,Eve,0.0,1,28,0,2.6,1,MOCK-175,Patch issue in navigation stack #175
-Sub-task,Alice,0.0,1,28,0,2.6,0,MOCK-176,Implement dark mode toggle #176
-Sub-task,Eve,0.0,1,22,0,2.6,1,MOCK-177,Improve accessibility features #177
-Sub-task,Eve,0.0,1,15,0,2.6,1,MOCK-178,Redesign settings panel UI #178
-Sub-task,Grace,0.0,1,14,1,2.6,1,MOCK-179,Patch issue in navigation stack #179
-Task,Grace,144000.0,0,154,2,2.6,1,MOCK-180,Patch issue in navigation stack #180
-Task,Bob,0.0,1,25,1,2.6,1,MOCK-181,Refactor Redux state management #181
-Sub-task,Frank,0.0,1,7,0,2.6,1,MOCK-182,Implement feature flagging system #182
-Sub-task,Alice,0.0,1,-13,1,2.6,1,MOCK-183,Implement feature flagging system #183
-Task,Charlie,0.0,0,3,0,2.6,1,MOCK-184,Implement user authentication flow #184
-Task,Alice,288000.0,0,106,2,2.0,1,MOCK-185,Redesign settings panel UI #185
-Task,Grace,144000.0,1,4,0,2.0,1,MOCK-186,Implement user authentication flow #186
-Task,Frank,144000.0,1,25,1,2.5,1,MOCK-187,Fix crash in notification handler #187
-Task,Diana,144000.0,1,84,1,2.5,1,MOCK-188,Implement feature flagging system #188
-Task,Eve,144000.0,1,84,0,2.5,1,MOCK-189,Implement dark mode toggle #189
-Task,Eve,288000.0,1,84,0,2.5,1,MOCK-190,Develop onboarding walkthrough #190
-Sub-task,Eve,0.0,1,14,0,2.5,1,MOCK-191,Improve accessibility features #191
-Sub-task,Bob,0.0,1,14,0,2.5,0,MOCK-192,Fix crash in notification handler #192
-Sub-task,Grace,0.0,1,8,0,2.5,1,MOCK-193,Optimize app startup time #193
-Sub-task,Frank,0.0,1,1,0,2.5,1,MOCK-194,Implement feature flagging system #194
-Sub-task,Eve,0.0,1,0,1,2.5,1,MOCK-195,Enable offline data sync #195
-Bug,Bob,0.0,0,9,13,2.5,0,MOCK-196,Enable offline data sync #196
-Task,Diana,0.0,0,11,3,2.0,1,MOCK-197,Optimize app startup time #197
-Task,Charlie,0.0,0,11,1,2.0,1,MOCK-198,Fix crash in notification handler #198
-Task,Grace,57600.0,1,50,0,2.0,0,MOCK-199,Optimize app startup time #199
-Task,Diana,144000.0,1,18,0,2.0,1,MOCK-200,Enable offline data sync #200
-Task,Diana,144000.0,1,87,1,3.55,0,MOCK-201,Improve accessibility features #201
-Epic,Grace,0.0,1,17,1,3.55,1,MOCK-202,Enable offline data sync #202
-Bug,Frank,0.0,1,29,13,3.55,0,MOCK-203,Refactor Redux state management #203
-Bug,Eve,0.0,1,28,11,3.55,0,MOCK-204,Develop onboarding walkthrough #204
-Task,Diana,0.0,1,3,1,3.55,0,MOCK-205,Improve accessibility features #205
-Task,Diana,14400.0,1,11,3,3.55,0,MOCK-206,Refactor Redux state management #206
-Task,Diana,144000.0,1,79,4,3.55,0,MOCK-207,Refactor Redux state management #207
-Bug,Bob,0.0,1,9,4,3.55,0,MOCK-208,Improve accessibility features #208
-Sub-task,Eve,0.0,1,8,1,3.55,0,MOCK-209,Implement feature flagging system #209
-Sub-task,Bob,0.0,1,8,1,3.55,0,MOCK-210,Implement dark mode toggle #210
-Story,Grace,0.0,1,184,1,3.55,0,MOCK-211,Enable offline data sync #211
-Sub-task,Diana,57600.0,1,134,0,3.55,1,MOCK-212,Develop onboarding walkthrough #212
-Task,Alice,14400.0,1,128,3,3.55,0,MOCK-213,Redesign settings panel UI #213
-Bug,Hank,0.0,1,84,5,3.55,0,MOCK-214,Integrate third-party analytics SDK #214
-Task,Grace,403200.0,1,94,2,3.55,1,MOCK-215,Patch issue in navigation stack #215
-Task,Frank,144000.0,1,136,11,3.55,0,MOCK-216,Patch issue in navigation stack #216
-Task,Bob,0.0,1,191,3,3.55,0,MOCK-217,Optimize app startup time #217
-Task,Grace,0.0,1,134,0,3.55,0,MOCK-218,Enable offline data sync #218
-Task,Frank,0.0,1,15,0,3.55,0,MOCK-219,Implement user authentication flow #219
-Task,Charlie,28800.0,1,25,3,3.55,0,MOCK-220,Fix crash in notification handler #220
-Story,Diana,0.0,1,137,2,3.55,0,MOCK-221,Implement user authentication flow #221
-Sub-task,Hank,288000.0,1,295,9,3.55,0,MOCK-222,Fix crash in notification handler #222
-Sub-task,Bob,14400.0,1,24,1,3.55,0,MOCK-223,Fix crash in notification handler #223
-Sub-task,Alice,28800.0,1,108,5,3.55,0,MOCK-224,Implement feature flagging system #224
-Sub-task,Frank,28800.0,1,192,8,3.55,0,MOCK-225,Enable offline data sync #225
-Sub-task,Charlie,0.0,1,158,7,3.55,1,MOCK-226,Implement dark mode toggle #226
-Sub-task,Bob,0.0,1,137,0,3.55,1,MOCK-227,Patch issue in navigation stack #227
-Sub-task,Diana,0.0,1,137,0,3.55,1,MOCK-228,Implement dark mode toggle #228
-Sub-task,Alice,0.0,1,-20,1,3.55,0,MOCK-229,Patch issue in navigation stack #229
-Task,Bob,0.0,1,2,3,3.55,0,MOCK-230,Develop onboarding walkthrough #230
-Task,Diana,0.0,1,-4,0,3.55,0,MOCK-231,Fix crash in notification handler #231
-Task,Hank,0.0,1,91,3,3.55,0,MOCK-232,Optimize app startup time #232
-Bug,Grace,0.0,1,72,24,3.55,0,MOCK-233,Enable offline data sync #233
-Bug,Frank,0.0,1,81,8,3.55,0,MOCK-234,Optimize app startup time #234
-Story,Grace,0.0,1,17,7,3.55,0,MOCK-235,Improve accessibility features #235
-Sub-task,Bob,14400.0,1,17,2,3.55,1,MOCK-236,Fix crash in notification handler #236
-Sub-task,Grace,0.0,1,17,0,3.55,1,MOCK-237,Improve accessibility features #237
-Sub-task,Frank,0.0,1,17,0,3.55,1,MOCK-238,Implement feature flagging system #238
-Story,Alice,0.0,1,98,0,3.55,0,MOCK-239,Optimize app startup time #239
-Sub-task,Charlie,432000.0,1,98,0,3.55,1,MOCK-240,Redesign settings panel UI #240
-Sub-task,Diana,28800.0,1,72,0,3.55,0,MOCK-241,Redesign settings panel UI #241
-Sub-task,Eve,144000.0,1,98,1,3.55,0,MOCK-242,Fix crash in notification handler #242
-Sub-task,Frank,144000.0,1,98,0,3.55,0,MOCK-243,Integrate third-party analytics SDK #243
-Sub-task,Diana,0.0,1,88,3,3.55,0,MOCK-244,Integrate third-party analytics SDK #244
-Sub-task,Alice,86400.0,1,98,1,3.55,0,MOCK-245,Develop onboarding walkthrough #245
-Sub-task,Alice,144000.0,1,98,3,3.55,0,MOCK-246,Improve accessibility features #246
-Sub-task,Diana,144000.0,1,98,1,3.55,0,MOCK-247,Integrate third-party analytics SDK #247
-Sub-task,Grace,86400.0,1,1,0,3.55,0,MOCK-248,Optimize app startup time #248
-Bug,Charlie,0.0,1,24,3,3.55,0,MOCK-249,Develop onboarding walkthrough #249
-Bug,Diana,0.0,1,13,1,3.55,0,MOCK-250,Implement user authentication flow #250
-Task,Frank,0.0,1,11,2,3.55,0,MOCK-251,Develop onboarding walkthrough #251
-Task,Eve,0.0,1,11,6,3.55,0,MOCK-252,Redesign settings panel UI #252
-Bug,Grace,0.0,1,28,15,3.55,0,MOCK-253,Patch issue in navigation stack #253
-Task,Diana,0.0,0,9,4,3.55,1,MOCK-254,Optimize app startup time #254
-Task,Eve,144000.0,1,323,6,3.55,0,MOCK-255,Enable offline data sync #255
-Task,Diana,57600.0,1,10,0,3.55,1,MOCK-256,Implement user authentication flow #256
-Sub-task,Eve,57600.0,1,0,0,3.55,1,MOCK-257,Optimize app startup time #257
-Task,Hank,0.0,0,4,0,3.55,1,MOCK-258,Develop onboarding walkthrough #258
-Sub-task,Charlie,0.0,0,4,0,3.55,1,MOCK-259,Implement user authentication flow #259
-Task,Charlie,0.0,1,1,1,3.55,1,MOCK-260,Improve accessibility features #260
-Bug,Eve,14400.0,0,1,1,3.55,0,MOCK-261,Patch issue in navigation stack #261
-Bug,Alice,28800.0,1,92,7,3.55,0,MOCK-262,Improve accessibility features #262
-Task,Diana,0.0,1,1,0,3.55,0,MOCK-263,Optimize app startup time #263
-Task,Grace,0.0,0,0,1,3.55,1,MOCK-264,Implement dark mode toggle #264
-Task,Hank,0.0,0,0,0,3.55,1,MOCK-265,Fix crash in notification handler #265
-Task,Hank,0.0,0,0,0,3.55,1,MOCK-266,Implement user authentication flow #266
-Task,Hank,0.0,0,0,0,3.55,1,MOCK-267,Redesign settings panel UI #267
-Bug,Alice,0.0,1,13,3,3.55,0,MOCK-268,Enable offline data sync #268
-Task,Alice,86400.0,1,8,0,3.55,0,MOCK-269,Optimize app startup time #269
-Bug,Charlie,0.0,1,14,8,3.55,0,MOCK-270,Enable offline data sync #270
-Task,Diana,0.0,1,8,0,3.55,0,MOCK-271,Improve accessibility features #271
-Epic,Frank,0.0,1,24,1,3.7222222222222223,1,MOCK-272,Integrate third-party analytics SDK #272
-Bug,Frank,0.0,0,5,0,3.7222222222222223,0,MOCK-273,Integrate third-party analytics SDK #273
-Bug,Diana,0.0,0,8,1,3.7222222222222223,0,MOCK-274,Optimize app startup time #274
-Bug,Grace,0.0,1,36,13,3.7222222222222223,0,MOCK-275,Improve accessibility features #275
-Bug,Alice,0.0,1,35,11,3.7222222222222223,0,MOCK-276,Develop onboarding walkthrough #276
-Task,Charlie,0.0,1,10,1,3.7222222222222223,0,MOCK-277,Fix crash in notification handler #277
-Task,Grace,14400.0,1,18,3,3.7222222222222223,0,MOCK-278,Develop onboarding walkthrough #278
-Bug,Eve,0.0,1,9,35,3.7222222222222223,0,MOCK-279,Implement feature flagging system #279
-Bug,Alice,0.0,1,16,4,3.7222222222222223,0,MOCK-280,Patch issue in navigation stack #280
-Sub-task,Diana,0.0,1,15,1,3.7222222222222223,0,MOCK-281,Develop onboarding walkthrough #281
-Sub-task,Bob,0.0,1,15,1,3.7222222222222223,0,MOCK-282,Optimize app startup time #282
-Story,Eve,0.0,1,191,1,3.7222222222222223,0,MOCK-283,Implement feature flagging system #283
-Sub-task,Frank,57600.0,1,141,0,3.7222222222222223,1,MOCK-284,Develop onboarding walkthrough #284
-Task,Charlie,144000.0,1,143,11,3.7222222222222223,0,MOCK-285,Optimize app startup time #285
-Task,Grace,0.0,1,199,3,3.7222222222222223,0,MOCK-286,Patch issue in navigation stack #286
-Task,Frank,0.0,1,141,0,3.7222222222222223,0,MOCK-287,Patch issue in navigation stack #287
-Task,Grace,0.0,1,22,0,3.7222222222222223,0,MOCK-288,Patch issue in navigation stack #288
-Task,Bob,28800.0,1,32,3,3.7222222222222223,0,MOCK-289,Fix crash in notification handler #289
-Story,Frank,0.0,1,144,2,3.7222222222222223,0,MOCK-290,Optimize app startup time #290
-Sub-task,Charlie,288000.0,1,302,9,3.7222222222222223,0,MOCK-291,Redesign settings panel UI #291
-Sub-task,Frank,14400.0,1,31,1,3.7222222222222223,0,MOCK-292,Fix crash in notification handler #292
-Sub-task,Charlie,28800.0,1,115,5,3.7222222222222223,0,MOCK-293,Develop onboarding walkthrough #293
-Sub-task,Grace,28800.0,1,199,8,3.7222222222222223,0,MOCK-294,Patch issue in navigation stack #294
-Sub-task,Frank,0.0,1,165,7,3.7222222222222223,1,MOCK-295,Refactor Redux state management #295
-Sub-task,Charlie,0.0,1,144,0,3.7222222222222223,1,MOCK-296,Implement feature flagging system #296
-Sub-task,Diana,0.0,1,144,0,3.7222222222222223,1,MOCK-297,Enable offline data sync #297
-Sub-task,Alice,0.0,1,-13,1,3.7222222222222223,0,MOCK-298,Optimize app startup time #298
-Task,Eve,0.0,1,9,3,3.7222222222222223,0,MOCK-299,Develop onboarding walkthrough #299
-Bug,Eve,0.0,1,4,2,3.7222222222222223,0,MOCK-300,Integrate third-party analytics SDK #300
-Task,Frank,0.0,1,3,0,3.7222222222222223,0,MOCK-301,Redesign settings panel UI #301
-Task,Bob,0.0,1,87,0,3.7222222222222223,0,MOCK-302,Redesign settings panel UI #302
-Bug,Bob,0.0,1,16,12,3.7222222222222223,0,MOCK-303,Implement dark mode toggle #303
-Task,Bob,0.0,1,44,29,3.7222222222222223,0,MOCK-304,Fix crash in notification handler #304
-Bug,Charlie,0.0,1,88,8,3.7222222222222223,0,MOCK-305,Implement feature flagging system #305
-Story,Frank,0.0,1,24,7,3.7222222222222223,0,MOCK-306,Improve accessibility features #306
-Sub-task,Hank,14400.0,1,24,2,3.7222222222222223,1,MOCK-307,Integrate third-party analytics SDK #307
-Sub-task,Grace,0.0,1,24,0,3.7222222222222223,1,MOCK-308,Fix crash in notification handler #308
-Sub-task,Alice,0.0,1,24,0,3.7222222222222223,1,MOCK-309,Implement dark mode toggle #309
-Story,Bob,0.0,1,105,0,3.7222222222222223,0,MOCK-310,Redesign settings panel UI #310
-Sub-task,Diana,432000.0,1,105,0,3.7222222222222223,1,MOCK-311,Optimize app startup time #311
-Sub-task,Diana,28800.0,1,79,0,3.7222222222222223,1,MOCK-312,Fix crash in notification handler #312
-Sub-task,Alice,144000.0,1,105,1,3.7222222222222223,0,MOCK-313,Fix crash in notification handler #313
-Sub-task,Hank,144000.0,1,105,0,3.7222222222222223,1,MOCK-314,Integrate third-party analytics SDK #314
-Sub-task,Diana,0.0,1,95,3,3.7222222222222223,0,MOCK-315,Implement user authentication flow #315
-Sub-task,Diana,86400.0,1,105,1,3.7222222222222223,0,MOCK-316,Redesign settings panel UI #316
-Sub-task,Hank,144000.0,1,105,3,3.7222222222222223,0,MOCK-317,Implement feature flagging system #317
-Sub-task,Frank,144000.0,1,105,1,3.7222222222222223,0,MOCK-318,Redesign settings panel UI #318
-Sub-task,Charlie,86400.0,1,8,0,3.7222222222222223,0,MOCK-319,Patch issue in navigation stack #319
-Task,Diana,0.0,1,18,2,3.7222222222222223,0,MOCK-320,Fix crash in notification handler #320
-Task,Hank,0.0,1,18,6,3.7222222222222223,0,MOCK-321,Implement user authentication flow #321
-Bug,Eve,0.0,1,36,15,3.7222222222222223,0,MOCK-322,Redesign settings panel UI #322
-Task,Charlie,144000.0,1,330,6,3.7222222222222223,0,MOCK-323,Implement user authentication flow #323
-Task,Alice,57600.0,1,17,0,3.7222222222222223,1,MOCK-324,Fix crash in notification handler #324
-Sub-task,Frank,57600.0,1,7,0,3.7222222222222223,1,MOCK-325,Fix crash in notification handler #325
-Task,Hank,28800.0,0,11,11,3.7222222222222223,1,MOCK-326,Optimize app startup time #326
-Task,Alice,0.0,0,9,4,3.7222222222222223,0,MOCK-327,Refactor Redux state management #327
-Task,Charlie,0.0,1,8,1,3.7222222222222223,1,MOCK-328,Refactor Redux state management #328
-Bug,Bob,28800.0,1,100,7,3.7222222222222223,0,MOCK-329,Develop onboarding walkthrough #329
-Task,Charlie,0.0,1,8,0,3.7222222222222223,0,MOCK-330,Patch issue in navigation stack #330
-Task,Alice,0.0,1,8,0,3.7222222222222223,0,MOCK-331,Patch issue in navigation stack #331
-Bug,Charlie,0.0,0,4,0,3.7222222222222223,0,MOCK-332,Implement dark mode toggle #332
-Bug,Frank,0.0,1,0,2,3.7222222222222223,0,MOCK-333,Implement user authentication flow #333
-Task,Grace,0.0,1,15,1,3.7222222222222223,1,MOCK-334,Refactor Redux state management #334
-Bug,Hank,0.0,1,17,2,3.7222222222222223,0,MOCK-335,Fix crash in notification handler #335
-Bug,Alice,0.0,1,21,3,3.7222222222222223,0,MOCK-336,Enable offline data sync #336
-Bug,Diana,0.0,1,7,1,3.7222222222222223,0,MOCK-337,Improve accessibility features #337
-Bug,Frank,0.0,1,21,8,3.7222222222222223,0,MOCK-338,Refactor Redux state management #338
-Task,Grace,0.0,1,5,33,3.4761904761904763,0,MOCK-339,Improve accessibility features #339
-Epic,Eve,0.0,1,34,1,3.4761904761904763,1,MOCK-340,Integrate third-party analytics SDK #340
-Bug,Diana,0.0,1,46,13,3.4761904761904763,0,MOCK-341,Fix crash in notification handler #341
-Bug,Bob,0.0,1,5,10,3.4761904761904763,0,MOCK-342,Implement dark mode toggle #342
-Bug,Bob,0.0,0,5,0,3.4761904761904763,0,MOCK-343,Patch issue in navigation stack #343
-Bug,Eve,0.0,0,7,0,3.4761904761904763,0,MOCK-344,Implement user authentication flow #344
-Bug,Grace,0.0,1,45,11,3.4761904761904763,0,MOCK-345,Fix crash in notification handler #345
-Task,Charlie,0.0,1,20,1,3.4761904761904763,0,MOCK-346,Integrate third-party analytics SDK #346
-Task,Eve,14400.0,1,28,3,3.4761904761904763,0,MOCK-347,Redesign settings panel UI #347
-Bug,Diana,0.0,1,19,35,3.4761904761904763,0,MOCK-348,Develop onboarding walkthrough #348
-Bug,Eve,0.0,1,12,1,3.4761904761904763,0,MOCK-349,Optimize app startup time #349
-Bug,Frank,0.0,1,26,4,3.4761904761904763,0,MOCK-350,Patch issue in navigation stack #350
-Sub-task,Alice,0.0,1,25,1,3.4761904761904763,0,MOCK-351,Improve accessibility features #351
-Sub-task,Grace,0.0,1,25,1,3.4761904761904763,0,MOCK-352,Implement feature flagging system #352
-Task,Charlie,144000.0,1,153,11,3.4761904761904763,0,MOCK-353,Redesign settings panel UI #353
-Task,Alice,0.0,1,209,3,3.4761904761904763,0,MOCK-354,Optimize app startup time #354
-Task,Charlie,0.0,1,151,0,3.4761904761904763,0,MOCK-355,Enable offline data sync #355
-Task,Alice,0.0,1,32,0,3.4761904761904763,0,MOCK-356,Patch issue in navigation stack #356
-Task,Diana,28800.0,1,42,3,3.4761904761904763,0,MOCK-357,Develop onboarding walkthrough #357
-Story,Bob,0.0,1,154,2,3.4761904761904763,0,MOCK-358,Improve accessibility features #358
-Sub-task,Charlie,288000.0,1,312,9,3.4761904761904763,0,MOCK-359,Fix crash in notification handler #359
-Sub-task,Grace,14400.0,1,41,1,3.4761904761904763,0,MOCK-360,Implement feature flagging system #360
-Sub-task,Hank,28800.0,1,125,5,3.4761904761904763,0,MOCK-361,Develop onboarding walkthrough #361
-Sub-task,Charlie,28800.0,1,209,8,3.4761904761904763,0,MOCK-362,Redesign settings panel UI #362
-Sub-task,Grace,0.0,1,175,7,3.4761904761904763,1,MOCK-363,Patch issue in navigation stack #363
-Sub-task,Diana,0.0,1,154,0,3.4761904761904763,1,MOCK-364,Patch issue in navigation stack #364
-Sub-task,Hank,0.0,1,154,0,3.4761904761904763,1,MOCK-365,Improve accessibility features #365
-Sub-task,Bob,0.0,1,-3,1,3.4761904761904763,0,MOCK-366,Improve accessibility features #366
-Task,Charlie,0.0,1,19,3,3.4761904761904763,0,MOCK-367,Implement dark mode toggle #367
-Bug,Alice,0.0,1,14,2,3.4761904761904763,0,MOCK-368,Redesign settings panel UI #368
-Task,Grace,0.0,1,13,0,3.4761904761904763,0,MOCK-369,Implement dark mode toggle #369
-Bug,Hank,0.0,1,11,7,3.4761904761904763,0,MOCK-370,Implement user authentication flow #370
-Task,Bob,57600.0,1,10,4,3.4761904761904763,0,MOCK-371,Redesign settings panel UI #371
-Task,Frank,288000.0,1,5,2,3.4761904761904763,1,MOCK-372,Integrate third-party analytics SDK #372
-Task,Charlie,0.0,1,4,2,3.4761904761904763,0,MOCK-373,Integrate third-party analytics SDK #373
-Task,Alice,0.0,1,54,29,3.4761904761904763,0,MOCK-374,Implement feature flagging system #374
-Bug,Charlie,0.0,1,98,8,3.4761904761904763,0,MOCK-375,Implement user authentication flow #375
-Story,Alice,0.0,1,34,7,3.4761904761904763,1,MOCK-376,Improve accessibility features #376
-Sub-task,Charlie,14400.0,1,34,2,3.4761904761904763,1,MOCK-377,Redesign settings panel UI #377
-Sub-task,Diana,0.0,1,34,0,3.4761904761904763,1,MOCK-378,Patch issue in navigation stack #378
-Sub-task,Charlie,0.0,1,34,0,3.4761904761904763,1,MOCK-379,Enable offline data sync #379
-Story,Alice,0.0,1,115,0,3.4761904761904763,0,MOCK-380,Develop onboarding walkthrough #380
-Sub-task,Charlie,432000.0,1,115,0,3.4761904761904763,1,MOCK-381,Develop onboarding walkthrough #381
-Sub-task,Eve,28800.0,1,89,0,3.4761904761904763,1,MOCK-382,Patch issue in navigation stack #382
-Sub-task,Eve,144000.0,1,115,1,3.4761904761904763,0,MOCK-383,Refactor Redux state management #383
-Sub-task,Hank,144000.0,1,115,0,3.4761904761904763,1,MOCK-384,Fix crash in notification handler #384
-Sub-task,Alice,0.0,1,105,3,3.4761904761904763,0,MOCK-385,Optimize app startup time #385
-Sub-task,Hank,86400.0,1,115,1,3.4761904761904763,0,MOCK-386,Implement dark mode toggle #386
-Sub-task,Frank,144000.0,1,115,3,3.4761904761904763,0,MOCK-387,Patch issue in navigation stack #387
-Sub-task,Diana,144000.0,1,115,1,3.4761904761904763,0,MOCK-388,Implement dark mode toggle #388
-Sub-task,Grace,86400.0,1,18,0,3.4761904761904763,0,MOCK-389,Integrate third-party analytics SDK #389
-Task,Eve,0.0,1,28,2,3.4761904761904763,0,MOCK-390,Optimize app startup time #390
-Task,Grace,0.0,1,28,6,3.4761904761904763,0,MOCK-391,Optimize app startup time #391
-Bug,Diana,0.0,1,46,15,3.4761904761904763,0,MOCK-392,Implement user authentication flow #392
-Task,Grace,57600.0,1,27,0,3.4761904761904763,1,MOCK-393,Redesign settings panel UI #393
-Sub-task,Alice,57600.0,1,17,0,3.4761904761904763,1,MOCK-394,Develop onboarding walkthrough #394
-Task,Alice,0.0,1,18,0,3.4761904761904763,0,MOCK-395,Redesign settings panel UI #395
-Bug,Eve,0.0,1,10,2,3.4761904761904763,0,MOCK-396,Redesign settings panel UI #396
-Task,Frank,0.0,1,25,1,3.4761904761904763,1,MOCK-397,Enable offline data sync #397
-Bug,Charlie,0.0,1,27,2,3.4761904761904763,0,MOCK-398,Integrate third-party analytics SDK #398
-Task,Alice,0.0,0,13,6,3.4761904761904763,0,MOCK-399,Enable offline data sync #399
-Task,Alice,0.0,0,10,1,3.4761904761904763,1,MOCK-400,Redesign settings panel UI #400
-Bug,Grace,28800.0,1,10,17,3.4761904761904763,0,MOCK-401,Patch issue in navigation stack #401
-Bug,Diana,0.0,0,10,5,3.4761904761904763,0,MOCK-402,Refactor Redux state management #402
-Task,Eve,0.0,0,10,0,3.4761904761904763,1,MOCK-403,Refactor Redux state management #403
-Task,Eve,3600.0,0,10,0,3.4761904761904763,1,MOCK-404,Redesign settings panel UI #404
-Bug,Frank,0.0,0,38,16,3.4761904761904763,0,MOCK-405,Patch issue in navigation stack #405
-Bug,Alice,0.0,0,28,2,3.4761904761904763,0,MOCK-406,Optimize app startup time #406
-Bug,Alice,0.0,1,5,4,3.4761904761904763,0,MOCK-407,Patch issue in navigation stack #407
-Task,Eve,0.0,1,5,2,3.4761904761904763,0,MOCK-408,Implement dark mode toggle #408
-Bug,Grace,0.0,1,17,1,3.4761904761904763,0,MOCK-409,Refactor Redux state management #409
-Bug,Grace,0.0,1,31,8,3.4761904761904763,0,MOCK-410,Implement feature flagging system #410
-Task,Frank,0.0,0,7,6,3.4761904761904763,0,MOCK-411,Optimize app startup time #411
-Epic,Alice,28800.0,1,32,0,10.0,0,MOCK-412,Improve accessibility features #412
-Task,Bob,144000.0,1,20,9,10.0,0,MOCK-413,Improve accessibility features #413
-Sub-task,Frank,0.0,1,-2,1,10.0,1,MOCK-414,Patch issue in navigation stack #414
-Sub-task,Frank,0.0,1,-2,2,10.0,0,MOCK-415,Fix crash in notification handler #415
-Sub-task,Bob,0.0,1,-4,5,10.0,0,MOCK-416,Optimize app startup time #416
-Task,Eve,57600.0,0,16,0,10.0,0,MOCK-417,Fix crash in notification handler #417
-Task,Alice,28800.0,1,16,0,10.0,1,MOCK-418,Enable offline data sync #418
-Task,Eve,57600.0,1,20,3,10.0,1,MOCK-419,Integrate third-party analytics SDK #419
-Sub-task,Frank,57600.0,1,20,1,10.0,1,MOCK-420,Integrate third-party analytics SDK #420
-Sub-task,Frank,28800.0,1,20,1,10.0,1,MOCK-421,Implement user authentication flow #421
-Sub-task,Charlie,0.0,1,10,1,10.0,1,MOCK-422,Patch issue in navigation stack #422
-Sub-task,Hank,0.0,1,10,1,10.0,1,MOCK-423,Refactor Redux state management #423
-Task,Diana,28800.0,0,16,0,10.0,1,MOCK-424,Patch issue in navigation stack #424
-Task,Eve,115200.0,1,17,0,10.0,1,MOCK-425,Optimize app startup time #425
-Task,Eve,86400.0,1,25,0,10.0,0,MOCK-426,Redesign settings panel UI #426
-Task,Grace,115200.0,1,-150,0,10.0,0,MOCK-427,Implement dark mode toggle #427
-Task,Hank,57600.0,1,123,46,10.0,0,MOCK-428,Implement dark mode toggle #428
-Sub-task,Hank,57600.0,1,9,0,10.0,1,MOCK-429,Develop onboarding walkthrough #429
-Sub-task,Hank,302400.0,1,9,0,10.0,1,MOCK-430,Implement user authentication flow #430
-Sub-task,Bob,14400.0,1,-150,6,10.0,0,MOCK-431,Optimize app startup time #431
-Task,Eve,57600.0,1,64,0,3.5,0,MOCK-432,Implement dark mode toggle #432
-Task,Eve,86400.0,1,22,1,3.5,0,MOCK-433,Optimize app startup time #433
-Task,Bob,57600.0,1,21,3,3.5,0,MOCK-434,Enable offline data sync #434
-Story,Diana,0.0,1,24,1,3.5,0,MOCK-435,Fix crash in notification handler #435
-Sub-task,Hank,57600.0,1,23,0,3.5,0,MOCK-436,Redesign settings panel UI #436
-Sub-task,Charlie,0.0,1,23,1,3.5,0,MOCK-437,Implement user authentication flow #437
-Sub-task,Alice,0.0,1,23,2,3.5,0,MOCK-438,Implement feature flagging system #438
-Sub-task,Hank,57600.0,1,23,2,3.5,0,MOCK-439,Implement dark mode toggle #439
-Sub-task,Alice,57600.0,1,23,3,3.5,0,MOCK-440,Patch issue in navigation stack #440
-Sub-task,Diana,86400.0,1,21,0,3.5,0,MOCK-441,Implement feature flagging system #441
-Sub-task,Alice,57600.0,1,21,0,3.5,0,MOCK-442,Implement user authentication flow #442
-Sub-task,Alice,86400.0,1,9,1,3.5,0,MOCK-443,Develop onboarding walkthrough #443
-Sub-task,Eve,28800.0,1,-42,0,3.5,0,MOCK-444,Refactor Redux state management #444
-Bug,Diana,0.0,1,10,2,3.5,0,MOCK-445,Develop onboarding walkthrough #445
-Task,Alice,288000.0,1,112,0,2.2,1,MOCK-446,Implement dark mode toggle #446
-Sub-task,Hank,0.0,1,42,0,2.2,1,MOCK-447,Develop onboarding walkthrough #447
-Sub-task,Bob,0.0,1,42,0,2.2,0,MOCK-448,Optimize app startup time #448
-Sub-task,Bob,0.0,1,36,0,2.2,1,MOCK-449,Develop onboarding walkthrough #449
-Sub-task,Grace,0.0,1,29,0,2.2,1,MOCK-450,Develop onboarding walkthrough #450
-Sub-task,Eve,0.0,1,28,1,2.2,1,MOCK-451,Implement feature flagging system #451
-Task,Grace,0.0,1,39,1,2.2,1,MOCK-452,Patch issue in navigation stack #452
-Sub-task,Charlie,0.0,1,21,0,2.2,1,MOCK-453,Integrate third-party analytics SDK #453
-Sub-task,Bob,0.0,1,1,1,2.2,1,MOCK-454,Integrate third-party analytics SDK #454
-Bug,Grace,0.0,1,16,8,2.2,0,MOCK-455,Patch issue in navigation stack #455
-Task,Charlie,0.0,1,2,0,2.2,1,MOCK-456,Implement user authentication flow #456
-Task,Diana,0.0,1,12,33,3.3461538461538463,0,MOCK-457,Redesign settings panel UI #457
-Epic,Eve,0.0,1,40,1,3.3461538461538463,1,MOCK-458,Fix crash in notification handler #458
-Bug,Alice,0.0,0,3,0,3.3461538461538463,0,MOCK-459,Patch issue in navigation stack #459
-Bug,Hank,0.0,1,53,13,3.3461538461538463,1,MOCK-460,Redesign settings panel UI #460
-Bug,Hank,0.0,1,11,10,3.3461538461538463,1,MOCK-461,Optimize app startup time #461
-Bug,Eve,0.0,1,52,11,3.3461538461538463,0,MOCK-462,Implement feature flagging system #462
-Task,Charlie,0.0,1,26,1,3.3461538461538463,0,MOCK-463,Integrate third-party analytics SDK #463
-Task,Alice,14400.0,1,35,3,3.3461538461538463,0,MOCK-464,Develop onboarding walkthrough #464
-Task,Alice,0.0,0,6,0,3.3461538461538463,0,MOCK-465,Implement user authentication flow #465
-Bug,Frank,0.0,1,19,1,3.3461538461538463,0,MOCK-466,Fix crash in notification handler #466
-Bug,Hank,0.0,1,279,28,3.3461538461538463,0,MOCK-467,Fix crash in notification handler #467
-Bug,Charlie,0.0,1,4,3,3.3461538461538463,0,MOCK-468,Develop onboarding walkthrough #468
-Bug,Charlie,0.0,1,33,4,3.3461538461538463,0,MOCK-469,Improve accessibility features #469
-Sub-task,Bob,0.0,1,31,1,3.3461538461538463,0,MOCK-470,Implement dark mode toggle #470
-Sub-task,Hank,0.0,1,31,1,3.3461538461538463,0,MOCK-471,Enable offline data sync #471
-Bug,Bob,0.0,0,192,10,3.3461538461538463,1,MOCK-472,Implement feature flagging system #472
-Task,Frank,144000.0,1,160,11,3.3461538461538463,0,MOCK-473,Integrate third-party analytics SDK #473
-Task,Frank,0.0,1,215,3,3.3461538461538463,0,MOCK-474,Improve accessibility features #474
-Epic,Bob,0.0,1,30,3,3.3461538461538463,1,MOCK-475,Fix crash in notification handler #475
-Task,Hank,0.0,1,157,0,3.3461538461538463,0,MOCK-476,Implement feature flagging system #476
-Bug,Bob,0.0,1,28,11,3.3461538461538463,0,MOCK-477,Implement dark mode toggle #477
-Bug,Alice,0.0,1,35,6,3.3461538461538463,0,MOCK-478,Implement feature flagging system #478
-Bug,Hank,57600.0,1,124,7,3.3461538461538463,0,MOCK-479,Refactor Redux state management #479
-Task,Eve,0.0,1,38,0,3.3461538461538463,0,MOCK-480,Fix crash in notification handler #480
-Task,Alice,28800.0,1,48,3,3.3461538461538463,0,MOCK-481,Implement dark mode toggle #481
-Story,Charlie,0.0,1,161,2,3.3461538461538463,0,MOCK-482,Redesign settings panel UI #482
-Sub-task,Grace,288000.0,1,319,9,3.3461538461538463,0,MOCK-483,Implement feature flagging system #483
-Sub-task,Frank,14400.0,1,48,1,3.3461538461538463,0,MOCK-484,Implement feature flagging system #484
-Sub-task,Diana,28800.0,1,132,5,3.3461538461538463,1,MOCK-485,Improve accessibility features #485
-Sub-task,Charlie,28800.0,1,216,8,3.3461538461538463,0,MOCK-486,Implement dark mode toggle #486
-Sub-task,Hank,0.0,1,182,7,3.3461538461538463,1,MOCK-487,Implement dark mode toggle #487
-Sub-task,Eve,0.0,1,161,0,3.3461538461538463,1,MOCK-488,Enable offline data sync #488
-Sub-task,Bob,0.0,1,161,0,3.3461538461538463,1,MOCK-489,Implement dark mode toggle #489
-Sub-task,Bob,0.0,1,4,1,3.3461538461538463,0,MOCK-490,Optimize app startup time #490
-Task,Eve,0.0,1,26,3,3.3461538461538463,0,MOCK-491,Implement dark mode toggle #491
-Bug,Bob,0.0,1,20,2,3.3461538461538463,0,MOCK-492,Fix crash in notification handler #492
-Task,Hank,0.0,1,20,0,3.3461538461538463,0,MOCK-493,Develop onboarding walkthrough #493
-Bug,Eve,0.0,1,18,7,3.3461538461538463,0,MOCK-494,Fix crash in notification handler #494
-Task,Eve,57600.0,1,16,4,3.3461538461538463,1,MOCK-495,Enable offline data sync #495
-Task,Alice,0.0,1,12,0,3.3461538461538463,0,MOCK-496,Improve accessibility features #496
-Task,Charlie,288000.0,1,12,2,3.3461538461538463,1,MOCK-497,Redesign settings panel UI #497
-Bug,Grace,0.0,1,26,3,3.3461538461538463,0,MOCK-498,Fix crash in notification handler #498
-Bug,Hank,0.0,1,26,4,3.3461538461538463,0,MOCK-499,Develop onboarding walkthrough #499
-Bug,Alice,0.0,1,59,24,3.3461538461538463,0,MOCK-500,Enable offline data sync #500
-Bug,Eve,0.0,1,35,10,3.3461538461538463,0,MOCK-501,Integrate third-party analytics SDK #501
-Task,Bob,0.0,1,11,0,3.3461538461538463,0,MOCK-502,Patch issue in navigation stack #502
-Task,Alice,0.0,1,10,2,3.3461538461538463,0,MOCK-503,Develop onboarding walkthrough #503
-Bug,Alice,0.0,1,28,8,3.3461538461538463,0,MOCK-504,Enable offline data sync #504
-Bug,Bob,0.0,1,38,7,3.3461538461538463,0,MOCK-505,Optimize app startup time #505
-Task,Frank,0.0,1,5,3,3.3461538461538463,0,MOCK-506,Develop onboarding walkthrough #506
+Task,3351d8b754ac,288000.0,1,28,1,2.0,1,MOCK-1,Implement dark mode toggle #1
+Task,4480f38d3f0f,144000.0,1,11,1,2.0,1,MOCK-2,Optimize app startup time #2
+Bug,4480f38d3f0f,0.0,0,9,8,8.333333333333334,0,MOCK-3,Implement feature flagging system #3
+Task,4480f38d3f0f,28800.0,0,65,2,8.333333333333334,1,MOCK-4,Implement dark mode toggle #4
+Task,dd72a245185f,144000.0,1,64,1,8.333333333333334,0,MOCK-5,Integrate third-party analytics SDK #5
+Task,dd72a245185f,144000.0,0,65,0,8.333333333333334,1,MOCK-6,Redesign settings panel UI #6
+Sub-task,e9842a5fa0c6,28800.0,0,65,0,8.333333333333334,1,MOCK-7,Patch issue in navigation stack #7
+Sub-task,582ddb60581d,28800.0,0,65,0,8.333333333333334,1,MOCK-8,Implement feature flagging system #8
+Sub-task,dd72a245185f,28800.0,0,65,0,8.333333333333334,1,MOCK-9,Develop onboarding walkthrough #9
+Sub-task,4480f38d3f0f,0.0,0,65,0,8.333333333333334,1,MOCK-10,Implement feature flagging system #10
+Sub-task,dd72a245185f,28800.0,0,65,0,8.333333333333334,1,MOCK-11,Patch issue in navigation stack #11
+Sub-task,ca1a22a11536,0.0,0,42,0,8.333333333333334,1,MOCK-12,Patch issue in navigation stack #12
+Sub-task,dd72a245185f,0.0,0,42,0,8.333333333333334,1,MOCK-13,Refactor Redux state management #13
+Sub-task,e9842a5fa0c6,0.0,0,42,0,8.333333333333334,1,MOCK-14,Optimize app startup time #14
+Sub-task,6447edd3e3f9,0.0,0,25,0,8.333333333333334,1,MOCK-15,Implement user authentication flow #15
+Task,4480f38d3f0f,144000.0,0,10,0,8.333333333333334,1,MOCK-16,Implement dark mode toggle #16
+Task,582ddb60581d,28800.0,0,65,0,8.333333333333334,1,MOCK-17,Optimize app startup time #17
+Story,ca1a22a11536,0.0,1,35,0,8.333333333333334,0,MOCK-18,Implement user authentication flow #18
+Sub-task,e9842a5fa0c6,432000.0,1,35,0,8.333333333333334,1,MOCK-19,Redesign settings panel UI #19
+Sub-task,582ddb60581d,28800.0,1,9,0,8.333333333333334,0,MOCK-20,Implement user authentication flow #20
+Sub-task,6447edd3e3f9,144000.0,1,35,1,8.333333333333334,0,MOCK-21,Implement dark mode toggle #21
+Sub-task,e9842a5fa0c6,144000.0,1,35,0,8.333333333333334,0,MOCK-22,Develop onboarding walkthrough #22
+Sub-task,1eead18cddc6,0.0,1,25,3,8.333333333333334,0,MOCK-23,Optimize app startup time #23
+Sub-task,1eead18cddc6,86400.0,1,35,1,8.333333333333334,0,MOCK-24,Implement dark mode toggle #24
+Sub-task,582ddb60581d,144000.0,1,35,3,8.333333333333334,0,MOCK-25,Enable offline data sync #25
+Sub-task,dd72a245185f,144000.0,1,35,1,8.333333333333334,0,MOCK-26,Integrate third-party analytics SDK #26
+Sub-task,4480f38d3f0f,86400.0,1,-62,0,8.333333333333334,0,MOCK-27,Redesign settings panel UI #27
+Task,582ddb60581d,288000.0,1,42,1,3.0,1,MOCK-28,Implement dark mode toggle #28
+Task,1eead18cddc6,144000.0,1,25,1,3.0,1,MOCK-29,Implement dark mode toggle #29
+Task,582ddb60581d,288000.0,1,42,1,3.0,1,MOCK-30,Enable offline data sync #30
+Task,3351d8b754ac,0.0,0,71,0,3.0,1,MOCK-31,Implement user authentication flow #31
+Sub-task,4480f38d3f0f,144000.0,0,71,1,3.0,0,MOCK-32,Fix crash in notification handler #32
+Sub-task,1eead18cddc6,432000.0,0,71,1,3.0,0,MOCK-33,Improve accessibility features #33
+Task,3351d8b754ac,288000.0,0,11,0,3.0,1,MOCK-34,Refactor Redux state management #34
+Task,dd72a245185f,28800.0,0,14,8,3.0,0,MOCK-35,Fix crash in notification handler #35
+Task,1eead18cddc6,144000.0,1,78,1,3.0,0,MOCK-36,Enable offline data sync #36
+Bug,ca1a22a11536,0.0,0,9,2,3.0,0,MOCK-37,Improve accessibility features #37
+Bug,4480f38d3f0f,0.0,0,9,1,3.0,0,MOCK-38,Fix crash in notification handler #38
+Task,4480f38d3f0f,57600.0,0,11,5,3.0,0,MOCK-39,Fix crash in notification handler #39
+Task,6447edd3e3f9,144000.0,1,84,1,2.0,0,MOCK-40,Develop onboarding walkthrough #40
+Task,3351d8b754ac,28800.0,0,104,2,2.0,1,MOCK-41,Patch issue in navigation stack #41
+Task,dd72a245185f,144000.0,1,11,2,3.0,1,MOCK-42,Patch issue in navigation stack #42
+Task,6447edd3e3f9,144000.0,1,112,0,3.0,1,MOCK-43,Redesign settings panel UI #43
+Sub-task,dd72a245185f,0.0,1,8,0,3.0,1,MOCK-44,Implement feature flagging system #44
+Sub-task,6447edd3e3f9,0.0,1,4,0,3.0,1,MOCK-45,Refactor Redux state management #45
+Sub-task,1eead18cddc6,0.0,1,0,0,3.0,1,MOCK-46,Enable offline data sync #46
+Task,1eead18cddc6,288000.0,1,56,1,3.0,1,MOCK-47,Implement user authentication flow #47
+Task,dd72a245185f,144000.0,1,25,2,5.0,1,MOCK-48,Patch issue in navigation stack #48
+Task,6447edd3e3f9,144000.0,1,126,0,5.0,1,MOCK-49,Implement user authentication flow #49
+Sub-task,e9842a5fa0c6,0.0,1,22,0,5.0,1,MOCK-50,Integrate third-party analytics SDK #50
+Sub-task,6447edd3e3f9,0.0,1,18,0,5.0,1,MOCK-51,Optimize app startup time #51
+Sub-task,ca1a22a11536,0.0,1,14,0,5.0,1,MOCK-52,Implement dark mode toggle #52
+Task,1eead18cddc6,144000.0,1,11,1,5.0,1,MOCK-53,Patch issue in navigation stack #53
+Task,582ddb60581d,86400.0,0,70,0,5.0,1,MOCK-54,Implement feature flagging system #54
+Task,1eead18cddc6,144000.0,0,70,0,5.0,1,MOCK-55,Redesign settings panel UI #55
+Task,1eead18cddc6,144000.0,1,70,1,5.0,1,MOCK-56,Implement user authentication flow #56
+Task,582ddb60581d,144000.0,1,70,0,5.0,1,MOCK-57,Fix crash in notification handler #57
+Bug,dd72a245185f,0.0,1,53,8,1.6666666666666667,0,MOCK-58,Develop onboarding walkthrough #58
+Bug,e9842a5fa0c6,0.0,1,87,16,1.6666666666666667,0,MOCK-59,Optimize app startup time #59
+Bug,1eead18cddc6,0.0,0,23,8,1.6666666666666667,0,MOCK-60,Implement user authentication flow #60
+Task,e9842a5fa0c6,0.0,0,38,11,1.6666666666666667,1,MOCK-61,Implement feature flagging system #61
+Task,4480f38d3f0f,7200.0,0,3,3,1.6666666666666667,1,MOCK-62,Improve accessibility features #62
+Task,6447edd3e3f9,14400.0,0,3,0,1.6666666666666667,1,MOCK-63,Fix crash in notification handler #63
+Bug,3351d8b754ac,0.0,1,30,8,1.6666666666666667,0,MOCK-64,Patch issue in navigation stack #64
+Sub-task,ca1a22a11536,0.0,1,0,0,1.6666666666666667,1,MOCK-65,Implement user authentication flow #65
+Bug,e9842a5fa0c6,86400.0,1,179,49,1.6666666666666667,0,MOCK-66,Integrate third-party analytics SDK #66
+Sub-task,1eead18cddc6,0.0,1,0,1,1.6666666666666667,1,MOCK-67,Fix crash in notification handler #67
+Task,3351d8b754ac,144000.0,1,73,1,2.4615384615384617,0,MOCK-68,Integrate third-party analytics SDK #68
+Task,3351d8b754ac,144000.0,1,65,4,2.4615384615384617,0,MOCK-69,Refactor Redux state management #69
+Bug,ca1a22a11536,0.0,0,7,0,2.4615384615384617,0,MOCK-70,Fix crash in notification handler #70
+Bug,3351d8b754ac,0.0,1,67,8,2.4615384615384617,0,MOCK-71,Implement feature flagging system #71
+Bug,3351d8b754ac,0.0,1,101,16,2.4615384615384617,0,MOCK-72,Integrate third-party analytics SDK #72
+Bug,e9842a5fa0c6,0.0,1,44,8,2.4615384615384617,0,MOCK-73,Redesign settings panel UI #73
+Sub-task,582ddb60581d,0.0,1,14,0,2.4615384615384617,1,MOCK-74,Redesign settings panel UI #74
+Story,3351d8b754ac,0.0,1,170,1,2.4615384615384617,0,MOCK-75,Refactor Redux state management #75
+Sub-task,ca1a22a11536,57600.0,1,120,0,2.4615384615384617,1,MOCK-76,Fix crash in notification handler #76
+Story,6447edd3e3f9,144000.0,1,58,0,2.4615384615384617,0,MOCK-77,Refactor Redux state management #77
+Sub-task,1eead18cddc6,14400.0,1,53,0,2.4615384615384617,1,MOCK-78,Patch issue in navigation stack #78
+Sub-task,ca1a22a11536,0.0,1,3,1,2.4615384615384617,1,MOCK-79,Optimize app startup time #79
+Task,dd72a245185f,288000.0,1,52,3,2.4615384615384617,0,MOCK-80,Redesign settings panel UI #80
+Task,6447edd3e3f9,14400.0,1,114,3,2.4615384615384617,0,MOCK-81,Improve accessibility features #81
+Bug,4480f38d3f0f,0.0,0,297,4,2.4615384615384617,0,MOCK-82,Patch issue in navigation stack #82
+Bug,1eead18cddc6,0.0,1,70,5,2.4615384615384617,0,MOCK-83,Implement user authentication flow #83
+Task,582ddb60581d,0.0,0,65,0,2.4615384615384617,0,MOCK-84,Patch issue in navigation stack #84
+Task,1eead18cddc6,0.0,0,297,2,2.4615384615384617,0,MOCK-85,Patch issue in navigation stack #85
+Task,6447edd3e3f9,403200.0,1,80,2,2.4615384615384617,1,MOCK-86,Fix crash in notification handler #86
+Task,4480f38d3f0f,57600.0,0,9,6,2.4615384615384617,0,MOCK-87,Fix crash in notification handler #87
+Bug,ca1a22a11536,0.0,0,8,0,2.4615384615384617,0,MOCK-88,Implement feature flagging system #88
+Task,e9842a5fa0c6,0.0,0,9,0,2.4615384615384617,0,MOCK-89,Implement feature flagging system #89
+Bug,1eead18cddc6,0.0,0,9,2,2.4615384615384617,0,MOCK-90,Patch issue in navigation stack #90
+Task,582ddb60581d,14400.0,0,7,0,2.4615384615384617,1,MOCK-91,Patch issue in navigation stack #91
+Task,6447edd3e3f9,0.0,1,-18,0,2.4615384615384617,0,MOCK-92,Implement dark mode toggle #92
+Task,6447edd3e3f9,0.0,0,8,7,2.4615384615384617,0,MOCK-93,Develop onboarding walkthrough #93
+Bug,582ddb60581d,86400.0,1,193,49,2.4615384615384617,0,MOCK-94,Develop onboarding walkthrough #94
+Sub-task,1eead18cddc6,0.0,1,14,1,2.4615384615384617,1,MOCK-95,Fix crash in notification handler #95
+Story,6447edd3e3f9,0.0,1,74,1,2.4615384615384617,0,MOCK-96,Develop onboarding walkthrough #96
+Sub-task,1eead18cddc6,43200.0,1,106,1,2.4615384615384617,0,MOCK-97,Fix crash in notification handler #97
+Sub-task,4480f38d3f0f,14400.0,1,74,0,2.4615384615384617,1,MOCK-98,Implement dark mode toggle #98
+Sub-task,4480f38d3f0f,0.0,1,11,8,2.4615384615384617,0,MOCK-99,Patch issue in navigation stack #99
+Task,ca1a22a11536,144000.0,1,80,1,3.789473684210526,0,MOCK-100,Patch issue in navigation stack #100
+Epic,ca1a22a11536,0.0,1,10,1,3.789473684210526,1,MOCK-101,Implement user authentication flow #101
+Bug,3351d8b754ac,0.0,0,88,9,3.789473684210526,0,MOCK-102,Improve accessibility features #102
+Bug,3351d8b754ac,0.0,1,21,11,3.789473684210526,0,MOCK-103,Redesign settings panel UI #103
+Task,4480f38d3f0f,14400.0,1,4,3,3.789473684210526,0,MOCK-104,Enable offline data sync #104
+Task,1eead18cddc6,144000.0,1,72,4,3.789473684210526,0,MOCK-105,Enable offline data sync #105
+Bug,e9842a5fa0c6,0.0,1,51,8,3.789473684210526,0,MOCK-106,Enable offline data sync #106
+Sub-task,582ddb60581d,0.0,1,20,0,3.789473684210526,1,MOCK-107,Integrate third-party analytics SDK #107
+Bug,6447edd3e3f9,0.0,1,2,4,3.789473684210526,0,MOCK-108,Redesign settings panel UI #108
+Sub-task,4480f38d3f0f,0.0,1,1,1,3.789473684210526,0,MOCK-109,Fix crash in notification handler #109
+Sub-task,4480f38d3f0f,0.0,1,1,1,3.789473684210526,0,MOCK-110,Implement feature flagging system #110
+Story,ca1a22a11536,0.0,1,177,1,3.789473684210526,0,MOCK-111,Implement user authentication flow #111
+Sub-task,dd72a245185f,57600.0,1,127,0,3.789473684210526,1,MOCK-112,Redesign settings panel UI #112
+Story,4480f38d3f0f,144000.0,1,65,0,3.789473684210526,0,MOCK-113,Implement dark mode toggle #113
+Sub-task,4480f38d3f0f,14400.0,1,60,0,3.789473684210526,1,MOCK-114,Implement feature flagging system #114
+Sub-task,e9842a5fa0c6,0.0,1,10,1,3.789473684210526,1,MOCK-115,Integrate third-party analytics SDK #115
+Task,ca1a22a11536,288000.0,1,58,3,3.789473684210526,0,MOCK-116,Implement feature flagging system #116
+Task,6447edd3e3f9,14400.0,1,121,3,3.789473684210526,0,MOCK-117,Implement user authentication flow #117
+Bug,dd72a245185f,0.0,1,77,5,3.789473684210526,0,MOCK-118,Refactor Redux state management #118
+Task,3351d8b754ac,403200.0,1,87,2,3.789473684210526,1,MOCK-119,Patch issue in navigation stack #119
+Task,e9842a5fa0c6,144000.0,1,129,11,3.789473684210526,0,MOCK-120,Integrate third-party analytics SDK #120
+Task,ca1a22a11536,0.0,1,184,3,3.789473684210526,0,MOCK-121,Implement user authentication flow #121
+Task,e9842a5fa0c6,0.0,1,127,0,3.789473684210526,0,MOCK-122,Improve accessibility features #122
+Task,ca1a22a11536,0.0,0,204,2,3.789473684210526,0,MOCK-123,Develop onboarding walkthrough #123
+Task,dd72a245185f,0.0,1,8,0,3.789473684210526,0,MOCK-124,Implement dark mode toggle #124
+Task,dd72a245185f,28800.0,1,18,3,3.789473684210526,0,MOCK-125,Fix crash in notification handler #125
+Story,e9842a5fa0c6,0.0,1,130,2,3.789473684210526,0,MOCK-126,Develop onboarding walkthrough #126
+Sub-task,dd72a245185f,288000.0,1,288,9,3.789473684210526,0,MOCK-127,Implement dark mode toggle #127
+Sub-task,4480f38d3f0f,14400.0,1,17,1,3.789473684210526,0,MOCK-128,Refactor Redux state management #128
+Sub-task,3351d8b754ac,28800.0,1,101,5,3.789473684210526,0,MOCK-129,Refactor Redux state management #129
+Sub-task,582ddb60581d,28800.0,1,185,8,3.789473684210526,0,MOCK-130,Redesign settings panel UI #130
+Sub-task,3351d8b754ac,0.0,1,151,7,3.789473684210526,1,MOCK-131,Implement dark mode toggle #131
+Sub-task,4480f38d3f0f,0.0,1,130,0,3.789473684210526,1,MOCK-132,Redesign settings panel UI #132
+Sub-task,dd72a245185f,0.0,1,130,0,3.789473684210526,1,MOCK-133,Optimize app startup time #133
+Sub-task,6447edd3e3f9,0.0,1,-27,1,3.789473684210526,0,MOCK-134,Optimize app startup time #134
+Task,dd72a245185f,0.0,1,-11,0,3.789473684210526,0,MOCK-135,Implement dark mode toggle #135
+Task,6447edd3e3f9,0.0,1,84,3,3.789473684210526,0,MOCK-136,Develop onboarding walkthrough #136
+Bug,6447edd3e3f9,0.0,1,65,24,3.789473684210526,0,MOCK-137,Redesign settings panel UI #137
+Bug,dd72a245185f,28800.0,0,79,14,3.789473684210526,1,MOCK-138,Implement feature flagging system #138
+Bug,dd72a245185f,0.0,1,74,8,3.789473684210526,0,MOCK-139,Refactor Redux state management #139
+Bug,6447edd3e3f9,0.0,0,7,3,3.789473684210526,1,MOCK-140,Develop onboarding walkthrough #140
+Story,6447edd3e3f9,0.0,1,10,7,3.789473684210526,0,MOCK-141,Implement user authentication flow #141
+Sub-task,4480f38d3f0f,14400.0,1,10,2,3.789473684210526,1,MOCK-142,Implement user authentication flow #142
+Sub-task,ca1a22a11536,0.0,1,10,0,3.789473684210526,1,MOCK-143,Optimize app startup time #143
+Sub-task,6447edd3e3f9,0.0,1,10,0,3.789473684210526,1,MOCK-144,Fix crash in notification handler #144
+Story,3351d8b754ac,0.0,1,91,0,3.789473684210526,0,MOCK-145,Improve accessibility features #145
+Sub-task,dd72a245185f,432000.0,1,91,0,3.789473684210526,1,MOCK-146,Optimize app startup time #146
+Sub-task,3351d8b754ac,28800.0,1,65,0,3.789473684210526,0,MOCK-147,Optimize app startup time #147
+Sub-task,e9842a5fa0c6,144000.0,1,91,1,3.789473684210526,0,MOCK-148,Implement feature flagging system #148
+Sub-task,6447edd3e3f9,144000.0,1,91,0,3.789473684210526,0,MOCK-149,Redesign settings panel UI #149
+Sub-task,1eead18cddc6,0.0,1,81,3,3.789473684210526,0,MOCK-150,Implement dark mode toggle #150
+Sub-task,e9842a5fa0c6,86400.0,1,91,1,3.789473684210526,0,MOCK-151,Implement user authentication flow #151
+Sub-task,ca1a22a11536,144000.0,1,91,3,3.789473684210526,0,MOCK-152,Implement feature flagging system #152
+Sub-task,3351d8b754ac,144000.0,1,91,1,3.789473684210526,0,MOCK-153,Implement dark mode toggle #153
+Sub-task,582ddb60581d,86400.0,1,-6,0,3.789473684210526,0,MOCK-154,Develop onboarding walkthrough #154
+Bug,6447edd3e3f9,0.0,1,17,3,3.789473684210526,0,MOCK-155,Develop onboarding walkthrough #155
+Bug,ca1a22a11536,0.0,1,6,1,3.789473684210526,0,MOCK-156,Integrate third-party analytics SDK #156
+Task,6447edd3e3f9,0.0,1,4,2,3.789473684210526,0,MOCK-157,Develop onboarding walkthrough #157
+Task,3351d8b754ac,0.0,1,4,6,3.789473684210526,0,MOCK-158,Fix crash in notification handler #158
+Task,dd72a245185f,14400.0,0,4,0,3.789473684210526,1,MOCK-159,Refactor Redux state management #159
+Task,582ddb60581d,0.0,0,4,1,3.789473684210526,1,MOCK-160,Redesign settings panel UI #160
+Bug,dd72a245185f,0.0,0,3,0,3.789473684210526,0,MOCK-161,Refactor Redux state management #161
+Bug,ca1a22a11536,0.0,1,21,15,3.789473684210526,0,MOCK-162,Redesign settings panel UI #162
+Task,1eead18cddc6,0.0,0,-1,0,3.789473684210526,1,MOCK-163,Integrate third-party analytics SDK #163
+Bug,dd72a245185f,0.0,1,6,3,3.789473684210526,0,MOCK-164,Develop onboarding walkthrough #164
+Story,dd72a245185f,0.0,1,81,1,3.789473684210526,0,MOCK-165,Integrate third-party analytics SDK #165
+Sub-task,e9842a5fa0c6,43200.0,1,113,1,3.789473684210526,0,MOCK-166,Redesign settings panel UI #166
+Sub-task,1eead18cddc6,14400.0,1,81,0,3.789473684210526,1,MOCK-167,Enable offline data sync #167
+Sub-task,582ddb60581d,0.0,1,18,8,3.789473684210526,0,MOCK-168,Integrate third-party analytics SDK #168
+Task,4480f38d3f0f,86400.0,1,1,0,3.789473684210526,0,MOCK-169,Patch issue in navigation stack #169
+Bug,6447edd3e3f9,0.0,1,7,8,3.789473684210526,0,MOCK-170,Patch issue in navigation stack #170
+Task,6447edd3e3f9,0.0,1,1,0,3.789473684210526,0,MOCK-171,Redesign settings panel UI #171
+Bug,ca1a22a11536,0.0,0,22,10,2.6,0,MOCK-172,Enable offline data sync #172
+Task,ca1a22a11536,144000.0,1,98,1,2.6,1,MOCK-173,Implement dark mode toggle #173
+Task,6447edd3e3f9,288000.0,1,98,0,2.6,1,MOCK-174,Patch issue in navigation stack #174
+Sub-task,dd72a245185f,0.0,1,28,0,2.6,1,MOCK-175,Patch issue in navigation stack #175
+Sub-task,3351d8b754ac,0.0,1,28,0,2.6,0,MOCK-176,Implement dark mode toggle #176
+Sub-task,dd72a245185f,0.0,1,22,0,2.6,1,MOCK-177,Improve accessibility features #177
+Sub-task,dd72a245185f,0.0,1,15,0,2.6,1,MOCK-178,Redesign settings panel UI #178
+Sub-task,4480f38d3f0f,0.0,1,14,1,2.6,1,MOCK-179,Patch issue in navigation stack #179
+Task,4480f38d3f0f,144000.0,0,154,2,2.6,1,MOCK-180,Patch issue in navigation stack #180
+Task,6447edd3e3f9,0.0,1,25,1,2.6,1,MOCK-181,Refactor Redux state management #181
+Sub-task,e9842a5fa0c6,0.0,1,7,0,2.6,1,MOCK-182,Implement feature flagging system #182
+Sub-task,3351d8b754ac,0.0,1,-13,1,2.6,1,MOCK-183,Implement feature flagging system #183
+Task,ca1a22a11536,0.0,0,3,0,2.6,1,MOCK-184,Implement user authentication flow #184
+Task,3351d8b754ac,288000.0,0,106,2,2.0,1,MOCK-185,Redesign settings panel UI #185
+Task,4480f38d3f0f,144000.0,1,4,0,2.0,1,MOCK-186,Implement user authentication flow #186
+Task,e9842a5fa0c6,144000.0,1,25,1,2.5,1,MOCK-187,Fix crash in notification handler #187
+Task,582ddb60581d,144000.0,1,84,1,2.5,1,MOCK-188,Implement feature flagging system #188
+Task,dd72a245185f,144000.0,1,84,0,2.5,1,MOCK-189,Implement dark mode toggle #189
+Task,dd72a245185f,288000.0,1,84,0,2.5,1,MOCK-190,Develop onboarding walkthrough #190
+Sub-task,dd72a245185f,0.0,1,14,0,2.5,1,MOCK-191,Improve accessibility features #191
+Sub-task,6447edd3e3f9,0.0,1,14,0,2.5,0,MOCK-192,Fix crash in notification handler #192
+Sub-task,4480f38d3f0f,0.0,1,8,0,2.5,1,MOCK-193,Optimize app startup time #193
+Sub-task,e9842a5fa0c6,0.0,1,1,0,2.5,1,MOCK-194,Implement feature flagging system #194
+Sub-task,dd72a245185f,0.0,1,0,1,2.5,1,MOCK-195,Enable offline data sync #195
+Bug,6447edd3e3f9,0.0,0,9,13,2.5,0,MOCK-196,Enable offline data sync #196
+Task,582ddb60581d,0.0,0,11,3,2.0,1,MOCK-197,Optimize app startup time #197
+Task,ca1a22a11536,0.0,0,11,1,2.0,1,MOCK-198,Fix crash in notification handler #198
+Task,4480f38d3f0f,57600.0,1,50,0,2.0,0,MOCK-199,Optimize app startup time #199
+Task,582ddb60581d,144000.0,1,18,0,2.0,1,MOCK-200,Enable offline data sync #200
+Task,582ddb60581d,144000.0,1,87,1,3.55,0,MOCK-201,Improve accessibility features #201
+Epic,4480f38d3f0f,0.0,1,17,1,3.55,1,MOCK-202,Enable offline data sync #202
+Bug,e9842a5fa0c6,0.0,1,29,13,3.55,0,MOCK-203,Refactor Redux state management #203
+Bug,dd72a245185f,0.0,1,28,11,3.55,0,MOCK-204,Develop onboarding walkthrough #204
+Task,582ddb60581d,0.0,1,3,1,3.55,0,MOCK-205,Improve accessibility features #205
+Task,582ddb60581d,14400.0,1,11,3,3.55,0,MOCK-206,Refactor Redux state management #206
+Task,582ddb60581d,144000.0,1,79,4,3.55,0,MOCK-207,Refactor Redux state management #207
+Bug,6447edd3e3f9,0.0,1,9,4,3.55,0,MOCK-208,Improve accessibility features #208
+Sub-task,dd72a245185f,0.0,1,8,1,3.55,0,MOCK-209,Implement feature flagging system #209
+Sub-task,6447edd3e3f9,0.0,1,8,1,3.55,0,MOCK-210,Implement dark mode toggle #210
+Story,4480f38d3f0f,0.0,1,184,1,3.55,0,MOCK-211,Enable offline data sync #211
+Sub-task,582ddb60581d,57600.0,1,134,0,3.55,1,MOCK-212,Develop onboarding walkthrough #212
+Task,3351d8b754ac,14400.0,1,128,3,3.55,0,MOCK-213,Redesign settings panel UI #213
+Bug,1eead18cddc6,0.0,1,84,5,3.55,0,MOCK-214,Integrate third-party analytics SDK #214
+Task,4480f38d3f0f,403200.0,1,94,2,3.55,1,MOCK-215,Patch issue in navigation stack #215
+Task,e9842a5fa0c6,144000.0,1,136,11,3.55,0,MOCK-216,Patch issue in navigation stack #216
+Task,6447edd3e3f9,0.0,1,191,3,3.55,0,MOCK-217,Optimize app startup time #217
+Task,4480f38d3f0f,0.0,1,134,0,3.55,0,MOCK-218,Enable offline data sync #218
+Task,e9842a5fa0c6,0.0,1,15,0,3.55,0,MOCK-219,Implement user authentication flow #219
+Task,ca1a22a11536,28800.0,1,25,3,3.55,0,MOCK-220,Fix crash in notification handler #220
+Story,582ddb60581d,0.0,1,137,2,3.55,0,MOCK-221,Implement user authentication flow #221
+Sub-task,1eead18cddc6,288000.0,1,295,9,3.55,0,MOCK-222,Fix crash in notification handler #222
+Sub-task,6447edd3e3f9,14400.0,1,24,1,3.55,0,MOCK-223,Fix crash in notification handler #223
+Sub-task,3351d8b754ac,28800.0,1,108,5,3.55,0,MOCK-224,Implement feature flagging system #224
+Sub-task,e9842a5fa0c6,28800.0,1,192,8,3.55,0,MOCK-225,Enable offline data sync #225
+Sub-task,ca1a22a11536,0.0,1,158,7,3.55,1,MOCK-226,Implement dark mode toggle #226
+Sub-task,6447edd3e3f9,0.0,1,137,0,3.55,1,MOCK-227,Patch issue in navigation stack #227
+Sub-task,582ddb60581d,0.0,1,137,0,3.55,1,MOCK-228,Implement dark mode toggle #228
+Sub-task,3351d8b754ac,0.0,1,-20,1,3.55,0,MOCK-229,Patch issue in navigation stack #229
+Task,6447edd3e3f9,0.0,1,2,3,3.55,0,MOCK-230,Develop onboarding walkthrough #230
+Task,582ddb60581d,0.0,1,-4,0,3.55,0,MOCK-231,Fix crash in notification handler #231
+Task,1eead18cddc6,0.0,1,91,3,3.55,0,MOCK-232,Optimize app startup time #232
+Bug,4480f38d3f0f,0.0,1,72,24,3.55,0,MOCK-233,Enable offline data sync #233
+Bug,e9842a5fa0c6,0.0,1,81,8,3.55,0,MOCK-234,Optimize app startup time #234
+Story,4480f38d3f0f,0.0,1,17,7,3.55,0,MOCK-235,Improve accessibility features #235
+Sub-task,6447edd3e3f9,14400.0,1,17,2,3.55,1,MOCK-236,Fix crash in notification handler #236
+Sub-task,4480f38d3f0f,0.0,1,17,0,3.55,1,MOCK-237,Improve accessibility features #237
+Sub-task,e9842a5fa0c6,0.0,1,17,0,3.55,1,MOCK-238,Implement feature flagging system #238
+Story,3351d8b754ac,0.0,1,98,0,3.55,0,MOCK-239,Optimize app startup time #239
+Sub-task,ca1a22a11536,432000.0,1,98,0,3.55,1,MOCK-240,Redesign settings panel UI #240
+Sub-task,582ddb60581d,28800.0,1,72,0,3.55,0,MOCK-241,Redesign settings panel UI #241
+Sub-task,dd72a245185f,144000.0,1,98,1,3.55,0,MOCK-242,Fix crash in notification handler #242
+Sub-task,e9842a5fa0c6,144000.0,1,98,0,3.55,0,MOCK-243,Integrate third-party analytics SDK #243
+Sub-task,582ddb60581d,0.0,1,88,3,3.55,0,MOCK-244,Integrate third-party analytics SDK #244
+Sub-task,3351d8b754ac,86400.0,1,98,1,3.55,0,MOCK-245,Develop onboarding walkthrough #245
+Sub-task,3351d8b754ac,144000.0,1,98,3,3.55,0,MOCK-246,Improve accessibility features #246
+Sub-task,582ddb60581d,144000.0,1,98,1,3.55,0,MOCK-247,Integrate third-party analytics SDK #247
+Sub-task,4480f38d3f0f,86400.0,1,1,0,3.55,0,MOCK-248,Optimize app startup time #248
+Bug,ca1a22a11536,0.0,1,24,3,3.55,0,MOCK-249,Develop onboarding walkthrough #249
+Bug,582ddb60581d,0.0,1,13,1,3.55,0,MOCK-250,Implement user authentication flow #250
+Task,e9842a5fa0c6,0.0,1,11,2,3.55,0,MOCK-251,Develop onboarding walkthrough #251
+Task,dd72a245185f,0.0,1,11,6,3.55,0,MOCK-252,Redesign settings panel UI #252
+Bug,4480f38d3f0f,0.0,1,28,15,3.55,0,MOCK-253,Patch issue in navigation stack #253
+Task,582ddb60581d,0.0,0,9,4,3.55,1,MOCK-254,Optimize app startup time #254
+Task,dd72a245185f,144000.0,1,323,6,3.55,0,MOCK-255,Enable offline data sync #255
+Task,582ddb60581d,57600.0,1,10,0,3.55,1,MOCK-256,Implement user authentication flow #256
+Sub-task,dd72a245185f,57600.0,1,0,0,3.55,1,MOCK-257,Optimize app startup time #257
+Task,1eead18cddc6,0.0,0,4,0,3.55,1,MOCK-258,Develop onboarding walkthrough #258
+Sub-task,ca1a22a11536,0.0,0,4,0,3.55,1,MOCK-259,Implement user authentication flow #259
+Task,ca1a22a11536,0.0,1,1,1,3.55,1,MOCK-260,Improve accessibility features #260
+Bug,dd72a245185f,14400.0,0,1,1,3.55,0,MOCK-261,Patch issue in navigation stack #261
+Bug,3351d8b754ac,28800.0,1,92,7,3.55,0,MOCK-262,Improve accessibility features #262
+Task,582ddb60581d,0.0,1,1,0,3.55,0,MOCK-263,Optimize app startup time #263
+Task,4480f38d3f0f,0.0,0,0,1,3.55,1,MOCK-264,Implement dark mode toggle #264
+Task,1eead18cddc6,0.0,0,0,0,3.55,1,MOCK-265,Fix crash in notification handler #265
+Task,1eead18cddc6,0.0,0,0,0,3.55,1,MOCK-266,Implement user authentication flow #266
+Task,1eead18cddc6,0.0,0,0,0,3.55,1,MOCK-267,Redesign settings panel UI #267
+Bug,3351d8b754ac,0.0,1,13,3,3.55,0,MOCK-268,Enable offline data sync #268
+Task,3351d8b754ac,86400.0,1,8,0,3.55,0,MOCK-269,Optimize app startup time #269
+Bug,ca1a22a11536,0.0,1,14,8,3.55,0,MOCK-270,Enable offline data sync #270
+Task,582ddb60581d,0.0,1,8,0,3.55,0,MOCK-271,Improve accessibility features #271
+Epic,e9842a5fa0c6,0.0,1,24,1,3.7222222222222223,1,MOCK-272,Integrate third-party analytics SDK #272
+Bug,e9842a5fa0c6,0.0,0,5,0,3.7222222222222223,0,MOCK-273,Integrate third-party analytics SDK #273
+Bug,582ddb60581d,0.0,0,8,1,3.7222222222222223,0,MOCK-274,Optimize app startup time #274
+Bug,4480f38d3f0f,0.0,1,36,13,3.7222222222222223,0,MOCK-275,Improve accessibility features #275
+Bug,3351d8b754ac,0.0,1,35,11,3.7222222222222223,0,MOCK-276,Develop onboarding walkthrough #276
+Task,ca1a22a11536,0.0,1,10,1,3.7222222222222223,0,MOCK-277,Fix crash in notification handler #277
+Task,4480f38d3f0f,14400.0,1,18,3,3.7222222222222223,0,MOCK-278,Develop onboarding walkthrough #278
+Bug,dd72a245185f,0.0,1,9,35,3.7222222222222223,0,MOCK-279,Implement feature flagging system #279
+Bug,3351d8b754ac,0.0,1,16,4,3.7222222222222223,0,MOCK-280,Patch issue in navigation stack #280
+Sub-task,582ddb60581d,0.0,1,15,1,3.7222222222222223,0,MOCK-281,Develop onboarding walkthrough #281
+Sub-task,6447edd3e3f9,0.0,1,15,1,3.7222222222222223,0,MOCK-282,Optimize app startup time #282
+Story,dd72a245185f,0.0,1,191,1,3.7222222222222223,0,MOCK-283,Implement feature flagging system #283
+Sub-task,e9842a5fa0c6,57600.0,1,141,0,3.7222222222222223,1,MOCK-284,Develop onboarding walkthrough #284
+Task,ca1a22a11536,144000.0,1,143,11,3.7222222222222223,0,MOCK-285,Optimize app startup time #285
+Task,4480f38d3f0f,0.0,1,199,3,3.7222222222222223,0,MOCK-286,Patch issue in navigation stack #286
+Task,e9842a5fa0c6,0.0,1,141,0,3.7222222222222223,0,MOCK-287,Patch issue in navigation stack #287
+Task,4480f38d3f0f,0.0,1,22,0,3.7222222222222223,0,MOCK-288,Patch issue in navigation stack #288
+Task,6447edd3e3f9,28800.0,1,32,3,3.7222222222222223,0,MOCK-289,Fix crash in notification handler #289
+Story,e9842a5fa0c6,0.0,1,144,2,3.7222222222222223,0,MOCK-290,Optimize app startup time #290
+Sub-task,ca1a22a11536,288000.0,1,302,9,3.7222222222222223,0,MOCK-291,Redesign settings panel UI #291
+Sub-task,e9842a5fa0c6,14400.0,1,31,1,3.7222222222222223,0,MOCK-292,Fix crash in notification handler #292
+Sub-task,ca1a22a11536,28800.0,1,115,5,3.7222222222222223,0,MOCK-293,Develop onboarding walkthrough #293
+Sub-task,4480f38d3f0f,28800.0,1,199,8,3.7222222222222223,0,MOCK-294,Patch issue in navigation stack #294
+Sub-task,e9842a5fa0c6,0.0,1,165,7,3.7222222222222223,1,MOCK-295,Refactor Redux state management #295
+Sub-task,ca1a22a11536,0.0,1,144,0,3.7222222222222223,1,MOCK-296,Implement feature flagging system #296
+Sub-task,582ddb60581d,0.0,1,144,0,3.7222222222222223,1,MOCK-297,Enable offline data sync #297
+Sub-task,3351d8b754ac,0.0,1,-13,1,3.7222222222222223,0,MOCK-298,Optimize app startup time #298
+Task,dd72a245185f,0.0,1,9,3,3.7222222222222223,0,MOCK-299,Develop onboarding walkthrough #299
+Bug,dd72a245185f,0.0,1,4,2,3.7222222222222223,0,MOCK-300,Integrate third-party analytics SDK #300
+Task,e9842a5fa0c6,0.0,1,3,0,3.7222222222222223,0,MOCK-301,Redesign settings panel UI #301
+Task,6447edd3e3f9,0.0,1,87,0,3.7222222222222223,0,MOCK-302,Redesign settings panel UI #302
+Bug,6447edd3e3f9,0.0,1,16,12,3.7222222222222223,0,MOCK-303,Implement dark mode toggle #303
+Task,6447edd3e3f9,0.0,1,44,29,3.7222222222222223,0,MOCK-304,Fix crash in notification handler #304
+Bug,ca1a22a11536,0.0,1,88,8,3.7222222222222223,0,MOCK-305,Implement feature flagging system #305
+Story,e9842a5fa0c6,0.0,1,24,7,3.7222222222222223,0,MOCK-306,Improve accessibility features #306
+Sub-task,1eead18cddc6,14400.0,1,24,2,3.7222222222222223,1,MOCK-307,Integrate third-party analytics SDK #307
+Sub-task,4480f38d3f0f,0.0,1,24,0,3.7222222222222223,1,MOCK-308,Fix crash in notification handler #308
+Sub-task,3351d8b754ac,0.0,1,24,0,3.7222222222222223,1,MOCK-309,Implement dark mode toggle #309
+Story,6447edd3e3f9,0.0,1,105,0,3.7222222222222223,0,MOCK-310,Redesign settings panel UI #310
+Sub-task,582ddb60581d,432000.0,1,105,0,3.7222222222222223,1,MOCK-311,Optimize app startup time #311
+Sub-task,582ddb60581d,28800.0,1,79,0,3.7222222222222223,1,MOCK-312,Fix crash in notification handler #312
+Sub-task,3351d8b754ac,144000.0,1,105,1,3.7222222222222223,0,MOCK-313,Fix crash in notification handler #313
+Sub-task,1eead18cddc6,144000.0,1,105,0,3.7222222222222223,1,MOCK-314,Integrate third-party analytics SDK #314
+Sub-task,582ddb60581d,0.0,1,95,3,3.7222222222222223,0,MOCK-315,Implement user authentication flow #315
+Sub-task,582ddb60581d,86400.0,1,105,1,3.7222222222222223,0,MOCK-316,Redesign settings panel UI #316
+Sub-task,1eead18cddc6,144000.0,1,105,3,3.7222222222222223,0,MOCK-317,Implement feature flagging system #317
+Sub-task,e9842a5fa0c6,144000.0,1,105,1,3.7222222222222223,0,MOCK-318,Redesign settings panel UI #318
+Sub-task,ca1a22a11536,86400.0,1,8,0,3.7222222222222223,0,MOCK-319,Patch issue in navigation stack #319
+Task,582ddb60581d,0.0,1,18,2,3.7222222222222223,0,MOCK-320,Fix crash in notification handler #320
+Task,1eead18cddc6,0.0,1,18,6,3.7222222222222223,0,MOCK-321,Implement user authentication flow #321
+Bug,dd72a245185f,0.0,1,36,15,3.7222222222222223,0,MOCK-322,Redesign settings panel UI #322
+Task,ca1a22a11536,144000.0,1,330,6,3.7222222222222223,0,MOCK-323,Implement user authentication flow #323
+Task,3351d8b754ac,57600.0,1,17,0,3.7222222222222223,1,MOCK-324,Fix crash in notification handler #324
+Sub-task,e9842a5fa0c6,57600.0,1,7,0,3.7222222222222223,1,MOCK-325,Fix crash in notification handler #325
+Task,1eead18cddc6,28800.0,0,11,11,3.7222222222222223,1,MOCK-326,Optimize app startup time #326
+Task,3351d8b754ac,0.0,0,9,4,3.7222222222222223,0,MOCK-327,Refactor Redux state management #327
+Task,ca1a22a11536,0.0,1,8,1,3.7222222222222223,1,MOCK-328,Refactor Redux state management #328
+Bug,6447edd3e3f9,28800.0,1,100,7,3.7222222222222223,0,MOCK-329,Develop onboarding walkthrough #329
+Task,ca1a22a11536,0.0,1,8,0,3.7222222222222223,0,MOCK-330,Patch issue in navigation stack #330
+Task,3351d8b754ac,0.0,1,8,0,3.7222222222222223,0,MOCK-331,Patch issue in navigation stack #331
+Bug,ca1a22a11536,0.0,0,4,0,3.7222222222222223,0,MOCK-332,Implement dark mode toggle #332
+Bug,e9842a5fa0c6,0.0,1,0,2,3.7222222222222223,0,MOCK-333,Implement user authentication flow #333
+Task,4480f38d3f0f,0.0,1,15,1,3.7222222222222223,1,MOCK-334,Refactor Redux state management #334
+Bug,1eead18cddc6,0.0,1,17,2,3.7222222222222223,0,MOCK-335,Fix crash in notification handler #335
+Bug,3351d8b754ac,0.0,1,21,3,3.7222222222222223,0,MOCK-336,Enable offline data sync #336
+Bug,582ddb60581d,0.0,1,7,1,3.7222222222222223,0,MOCK-337,Improve accessibility features #337
+Bug,e9842a5fa0c6,0.0,1,21,8,3.7222222222222223,0,MOCK-338,Refactor Redux state management #338
+Task,4480f38d3f0f,0.0,1,5,33,3.4761904761904763,0,MOCK-339,Improve accessibility features #339
+Epic,dd72a245185f,0.0,1,34,1,3.4761904761904763,1,MOCK-340,Integrate third-party analytics SDK #340
+Bug,582ddb60581d,0.0,1,46,13,3.4761904761904763,0,MOCK-341,Fix crash in notification handler #341
+Bug,6447edd3e3f9,0.0,1,5,10,3.4761904761904763,0,MOCK-342,Implement dark mode toggle #342
+Bug,6447edd3e3f9,0.0,0,5,0,3.4761904761904763,0,MOCK-343,Patch issue in navigation stack #343
+Bug,dd72a245185f,0.0,0,7,0,3.4761904761904763,0,MOCK-344,Implement user authentication flow #344
+Bug,4480f38d3f0f,0.0,1,45,11,3.4761904761904763,0,MOCK-345,Fix crash in notification handler #345
+Task,ca1a22a11536,0.0,1,20,1,3.4761904761904763,0,MOCK-346,Integrate third-party analytics SDK #346
+Task,dd72a245185f,14400.0,1,28,3,3.4761904761904763,0,MOCK-347,Redesign settings panel UI #347
+Bug,582ddb60581d,0.0,1,19,35,3.4761904761904763,0,MOCK-348,Develop onboarding walkthrough #348
+Bug,dd72a245185f,0.0,1,12,1,3.4761904761904763,0,MOCK-349,Optimize app startup time #349
+Bug,e9842a5fa0c6,0.0,1,26,4,3.4761904761904763,0,MOCK-350,Patch issue in navigation stack #350
+Sub-task,3351d8b754ac,0.0,1,25,1,3.4761904761904763,0,MOCK-351,Improve accessibility features #351
+Sub-task,4480f38d3f0f,0.0,1,25,1,3.4761904761904763,0,MOCK-352,Implement feature flagging system #352
+Task,ca1a22a11536,144000.0,1,153,11,3.4761904761904763,0,MOCK-353,Redesign settings panel UI #353
+Task,3351d8b754ac,0.0,1,209,3,3.4761904761904763,0,MOCK-354,Optimize app startup time #354
+Task,ca1a22a11536,0.0,1,151,0,3.4761904761904763,0,MOCK-355,Enable offline data sync #355
+Task,3351d8b754ac,0.0,1,32,0,3.4761904761904763,0,MOCK-356,Patch issue in navigation stack #356
+Task,582ddb60581d,28800.0,1,42,3,3.4761904761904763,0,MOCK-357,Develop onboarding walkthrough #357
+Story,6447edd3e3f9,0.0,1,154,2,3.4761904761904763,0,MOCK-358,Improve accessibility features #358
+Sub-task,ca1a22a11536,288000.0,1,312,9,3.4761904761904763,0,MOCK-359,Fix crash in notification handler #359
+Sub-task,4480f38d3f0f,14400.0,1,41,1,3.4761904761904763,0,MOCK-360,Implement feature flagging system #360
+Sub-task,1eead18cddc6,28800.0,1,125,5,3.4761904761904763,0,MOCK-361,Develop onboarding walkthrough #361
+Sub-task,ca1a22a11536,28800.0,1,209,8,3.4761904761904763,0,MOCK-362,Redesign settings panel UI #362
+Sub-task,4480f38d3f0f,0.0,1,175,7,3.4761904761904763,1,MOCK-363,Patch issue in navigation stack #363
+Sub-task,582ddb60581d,0.0,1,154,0,3.4761904761904763,1,MOCK-364,Patch issue in navigation stack #364
+Sub-task,1eead18cddc6,0.0,1,154,0,3.4761904761904763,1,MOCK-365,Improve accessibility features #365
+Sub-task,6447edd3e3f9,0.0,1,-3,1,3.4761904761904763,0,MOCK-366,Improve accessibility features #366
+Task,ca1a22a11536,0.0,1,19,3,3.4761904761904763,0,MOCK-367,Implement dark mode toggle #367
+Bug,3351d8b754ac,0.0,1,14,2,3.4761904761904763,0,MOCK-368,Redesign settings panel UI #368
+Task,4480f38d3f0f,0.0,1,13,0,3.4761904761904763,0,MOCK-369,Implement dark mode toggle #369
+Bug,1eead18cddc6,0.0,1,11,7,3.4761904761904763,0,MOCK-370,Implement user authentication flow #370
+Task,6447edd3e3f9,57600.0,1,10,4,3.4761904761904763,0,MOCK-371,Redesign settings panel UI #371
+Task,e9842a5fa0c6,288000.0,1,5,2,3.4761904761904763,1,MOCK-372,Integrate third-party analytics SDK #372
+Task,ca1a22a11536,0.0,1,4,2,3.4761904761904763,0,MOCK-373,Integrate third-party analytics SDK #373
+Task,3351d8b754ac,0.0,1,54,29,3.4761904761904763,0,MOCK-374,Implement feature flagging system #374
+Bug,ca1a22a11536,0.0,1,98,8,3.4761904761904763,0,MOCK-375,Implement user authentication flow #375
+Story,3351d8b754ac,0.0,1,34,7,3.4761904761904763,1,MOCK-376,Improve accessibility features #376
+Sub-task,ca1a22a11536,14400.0,1,34,2,3.4761904761904763,1,MOCK-377,Redesign settings panel UI #377
+Sub-task,582ddb60581d,0.0,1,34,0,3.4761904761904763,1,MOCK-378,Patch issue in navigation stack #378
+Sub-task,ca1a22a11536,0.0,1,34,0,3.4761904761904763,1,MOCK-379,Enable offline data sync #379
+Story,3351d8b754ac,0.0,1,115,0,3.4761904761904763,0,MOCK-380,Develop onboarding walkthrough #380
+Sub-task,ca1a22a11536,432000.0,1,115,0,3.4761904761904763,1,MOCK-381,Develop onboarding walkthrough #381
+Sub-task,dd72a245185f,28800.0,1,89,0,3.4761904761904763,1,MOCK-382,Patch issue in navigation stack #382
+Sub-task,dd72a245185f,144000.0,1,115,1,3.4761904761904763,0,MOCK-383,Refactor Redux state management #383
+Sub-task,1eead18cddc6,144000.0,1,115,0,3.4761904761904763,1,MOCK-384,Fix crash in notification handler #384
+Sub-task,3351d8b754ac,0.0,1,105,3,3.4761904761904763,0,MOCK-385,Optimize app startup time #385
+Sub-task,1eead18cddc6,86400.0,1,115,1,3.4761904761904763,0,MOCK-386,Implement dark mode toggle #386
+Sub-task,e9842a5fa0c6,144000.0,1,115,3,3.4761904761904763,0,MOCK-387,Patch issue in navigation stack #387
+Sub-task,582ddb60581d,144000.0,1,115,1,3.4761904761904763,0,MOCK-388,Implement dark mode toggle #388
+Sub-task,4480f38d3f0f,86400.0,1,18,0,3.4761904761904763,0,MOCK-389,Integrate third-party analytics SDK #389
+Task,dd72a245185f,0.0,1,28,2,3.4761904761904763,0,MOCK-390,Optimize app startup time #390
+Task,4480f38d3f0f,0.0,1,28,6,3.4761904761904763,0,MOCK-391,Optimize app startup time #391
+Bug,582ddb60581d,0.0,1,46,15,3.4761904761904763,0,MOCK-392,Implement user authentication flow #392
+Task,4480f38d3f0f,57600.0,1,27,0,3.4761904761904763,1,MOCK-393,Redesign settings panel UI #393
+Sub-task,3351d8b754ac,57600.0,1,17,0,3.4761904761904763,1,MOCK-394,Develop onboarding walkthrough #394
+Task,3351d8b754ac,0.0,1,18,0,3.4761904761904763,0,MOCK-395,Redesign settings panel UI #395
+Bug,dd72a245185f,0.0,1,10,2,3.4761904761904763,0,MOCK-396,Redesign settings panel UI #396
+Task,e9842a5fa0c6,0.0,1,25,1,3.4761904761904763,1,MOCK-397,Enable offline data sync #397
+Bug,ca1a22a11536,0.0,1,27,2,3.4761904761904763,0,MOCK-398,Integrate third-party analytics SDK #398
+Task,3351d8b754ac,0.0,0,13,6,3.4761904761904763,0,MOCK-399,Enable offline data sync #399
+Task,3351d8b754ac,0.0,0,10,1,3.4761904761904763,1,MOCK-400,Redesign settings panel UI #400
+Bug,4480f38d3f0f,28800.0,1,10,17,3.4761904761904763,0,MOCK-401,Patch issue in navigation stack #401
+Bug,582ddb60581d,0.0,0,10,5,3.4761904761904763,0,MOCK-402,Refactor Redux state management #402
+Task,dd72a245185f,0.0,0,10,0,3.4761904761904763,1,MOCK-403,Refactor Redux state management #403
+Task,dd72a245185f,3600.0,0,10,0,3.4761904761904763,1,MOCK-404,Redesign settings panel UI #404
+Bug,e9842a5fa0c6,0.0,0,38,16,3.4761904761904763,0,MOCK-405,Patch issue in navigation stack #405
+Bug,3351d8b754ac,0.0,0,28,2,3.4761904761904763,0,MOCK-406,Optimize app startup time #406
+Bug,3351d8b754ac,0.0,1,5,4,3.4761904761904763,0,MOCK-407,Patch issue in navigation stack #407
+Task,dd72a245185f,0.0,1,5,2,3.4761904761904763,0,MOCK-408,Implement dark mode toggle #408
+Bug,4480f38d3f0f,0.0,1,17,1,3.4761904761904763,0,MOCK-409,Refactor Redux state management #409
+Bug,4480f38d3f0f,0.0,1,31,8,3.4761904761904763,0,MOCK-410,Implement feature flagging system #410
+Task,e9842a5fa0c6,0.0,0,7,6,3.4761904761904763,0,MOCK-411,Optimize app startup time #411
+Epic,3351d8b754ac,28800.0,1,32,0,10.0,0,MOCK-412,Improve accessibility features #412
+Task,6447edd3e3f9,144000.0,1,20,9,10.0,0,MOCK-413,Improve accessibility features #413
+Sub-task,e9842a5fa0c6,0.0,1,-2,1,10.0,1,MOCK-414,Patch issue in navigation stack #414
+Sub-task,e9842a5fa0c6,0.0,1,-2,2,10.0,0,MOCK-415,Fix crash in notification handler #415
+Sub-task,6447edd3e3f9,0.0,1,-4,5,10.0,0,MOCK-416,Optimize app startup time #416
+Task,dd72a245185f,57600.0,0,16,0,10.0,0,MOCK-417,Fix crash in notification handler #417
+Task,3351d8b754ac,28800.0,1,16,0,10.0,1,MOCK-418,Enable offline data sync #418
+Task,dd72a245185f,57600.0,1,20,3,10.0,1,MOCK-419,Integrate third-party analytics SDK #419
+Sub-task,e9842a5fa0c6,57600.0,1,20,1,10.0,1,MOCK-420,Integrate third-party analytics SDK #420
+Sub-task,e9842a5fa0c6,28800.0,1,20,1,10.0,1,MOCK-421,Implement user authentication flow #421
+Sub-task,ca1a22a11536,0.0,1,10,1,10.0,1,MOCK-422,Patch issue in navigation stack #422
+Sub-task,1eead18cddc6,0.0,1,10,1,10.0,1,MOCK-423,Refactor Redux state management #423
+Task,582ddb60581d,28800.0,0,16,0,10.0,1,MOCK-424,Patch issue in navigation stack #424
+Task,dd72a245185f,115200.0,1,17,0,10.0,1,MOCK-425,Optimize app startup time #425
+Task,dd72a245185f,86400.0,1,25,0,10.0,0,MOCK-426,Redesign settings panel UI #426
+Task,4480f38d3f0f,115200.0,1,-150,0,10.0,0,MOCK-427,Implement dark mode toggle #427
+Task,1eead18cddc6,57600.0,1,123,46,10.0,0,MOCK-428,Implement dark mode toggle #428
+Sub-task,1eead18cddc6,57600.0,1,9,0,10.0,1,MOCK-429,Develop onboarding walkthrough #429
+Sub-task,1eead18cddc6,302400.0,1,9,0,10.0,1,MOCK-430,Implement user authentication flow #430
+Sub-task,6447edd3e3f9,14400.0,1,-150,6,10.0,0,MOCK-431,Optimize app startup time #431
+Task,dd72a245185f,57600.0,1,64,0,3.5,0,MOCK-432,Implement dark mode toggle #432
+Task,dd72a245185f,86400.0,1,22,1,3.5,0,MOCK-433,Optimize app startup time #433
+Task,6447edd3e3f9,57600.0,1,21,3,3.5,0,MOCK-434,Enable offline data sync #434
+Story,582ddb60581d,0.0,1,24,1,3.5,0,MOCK-435,Fix crash in notification handler #435
+Sub-task,1eead18cddc6,57600.0,1,23,0,3.5,0,MOCK-436,Redesign settings panel UI #436
+Sub-task,ca1a22a11536,0.0,1,23,1,3.5,0,MOCK-437,Implement user authentication flow #437
+Sub-task,3351d8b754ac,0.0,1,23,2,3.5,0,MOCK-438,Implement feature flagging system #438
+Sub-task,1eead18cddc6,57600.0,1,23,2,3.5,0,MOCK-439,Implement dark mode toggle #439
+Sub-task,3351d8b754ac,57600.0,1,23,3,3.5,0,MOCK-440,Patch issue in navigation stack #440
+Sub-task,582ddb60581d,86400.0,1,21,0,3.5,0,MOCK-441,Implement feature flagging system #441
+Sub-task,3351d8b754ac,57600.0,1,21,0,3.5,0,MOCK-442,Implement user authentication flow #442
+Sub-task,3351d8b754ac,86400.0,1,9,1,3.5,0,MOCK-443,Develop onboarding walkthrough #443
+Sub-task,dd72a245185f,28800.0,1,-42,0,3.5,0,MOCK-444,Refactor Redux state management #444
+Bug,582ddb60581d,0.0,1,10,2,3.5,0,MOCK-445,Develop onboarding walkthrough #445
+Task,3351d8b754ac,288000.0,1,112,0,2.2,1,MOCK-446,Implement dark mode toggle #446
+Sub-task,1eead18cddc6,0.0,1,42,0,2.2,1,MOCK-447,Develop onboarding walkthrough #447
+Sub-task,6447edd3e3f9,0.0,1,42,0,2.2,0,MOCK-448,Optimize app startup time #448
+Sub-task,6447edd3e3f9,0.0,1,36,0,2.2,1,MOCK-449,Develop onboarding walkthrough #449
+Sub-task,4480f38d3f0f,0.0,1,29,0,2.2,1,MOCK-450,Develop onboarding walkthrough #450
+Sub-task,dd72a245185f,0.0,1,28,1,2.2,1,MOCK-451,Implement feature flagging system #451
+Task,4480f38d3f0f,0.0,1,39,1,2.2,1,MOCK-452,Patch issue in navigation stack #452
+Sub-task,ca1a22a11536,0.0,1,21,0,2.2,1,MOCK-453,Integrate third-party analytics SDK #453
+Sub-task,6447edd3e3f9,0.0,1,1,1,2.2,1,MOCK-454,Integrate third-party analytics SDK #454
+Bug,4480f38d3f0f,0.0,1,16,8,2.2,0,MOCK-455,Patch issue in navigation stack #455
+Task,ca1a22a11536,0.0,1,2,0,2.2,1,MOCK-456,Implement user authentication flow #456
+Task,582ddb60581d,0.0,1,12,33,3.3461538461538463,0,MOCK-457,Redesign settings panel UI #457
+Epic,dd72a245185f,0.0,1,40,1,3.3461538461538463,1,MOCK-458,Fix crash in notification handler #458
+Bug,3351d8b754ac,0.0,0,3,0,3.3461538461538463,0,MOCK-459,Patch issue in navigation stack #459
+Bug,1eead18cddc6,0.0,1,53,13,3.3461538461538463,1,MOCK-460,Redesign settings panel UI #460
+Bug,1eead18cddc6,0.0,1,11,10,3.3461538461538463,1,MOCK-461,Optimize app startup time #461
+Bug,dd72a245185f,0.0,1,52,11,3.3461538461538463,0,MOCK-462,Implement feature flagging system #462
+Task,ca1a22a11536,0.0,1,26,1,3.3461538461538463,0,MOCK-463,Integrate third-party analytics SDK #463
+Task,3351d8b754ac,14400.0,1,35,3,3.3461538461538463,0,MOCK-464,Develop onboarding walkthrough #464
+Task,3351d8b754ac,0.0,0,6,0,3.3461538461538463,0,MOCK-465,Implement user authentication flow #465
+Bug,e9842a5fa0c6,0.0,1,19,1,3.3461538461538463,0,MOCK-466,Fix crash in notification handler #466
+Bug,1eead18cddc6,0.0,1,279,28,3.3461538461538463,0,MOCK-467,Fix crash in notification handler #467
+Bug,ca1a22a11536,0.0,1,4,3,3.3461538461538463,0,MOCK-468,Develop onboarding walkthrough #468
+Bug,ca1a22a11536,0.0,1,33,4,3.3461538461538463,0,MOCK-469,Improve accessibility features #469
+Sub-task,6447edd3e3f9,0.0,1,31,1,3.3461538461538463,0,MOCK-470,Implement dark mode toggle #470
+Sub-task,1eead18cddc6,0.0,1,31,1,3.3461538461538463,0,MOCK-471,Enable offline data sync #471
+Bug,6447edd3e3f9,0.0,0,192,10,3.3461538461538463,1,MOCK-472,Implement feature flagging system #472
+Task,e9842a5fa0c6,144000.0,1,160,11,3.3461538461538463,0,MOCK-473,Integrate third-party analytics SDK #473
+Task,e9842a5fa0c6,0.0,1,215,3,3.3461538461538463,0,MOCK-474,Improve accessibility features #474
+Epic,6447edd3e3f9,0.0,1,30,3,3.3461538461538463,1,MOCK-475,Fix crash in notification handler #475
+Task,1eead18cddc6,0.0,1,157,0,3.3461538461538463,0,MOCK-476,Implement feature flagging system #476
+Bug,6447edd3e3f9,0.0,1,28,11,3.3461538461538463,0,MOCK-477,Implement dark mode toggle #477
+Bug,3351d8b754ac,0.0,1,35,6,3.3461538461538463,0,MOCK-478,Implement feature flagging system #478
+Bug,1eead18cddc6,57600.0,1,124,7,3.3461538461538463,0,MOCK-479,Refactor Redux state management #479
+Task,dd72a245185f,0.0,1,38,0,3.3461538461538463,0,MOCK-480,Fix crash in notification handler #480
+Task,3351d8b754ac,28800.0,1,48,3,3.3461538461538463,0,MOCK-481,Implement dark mode toggle #481
+Story,ca1a22a11536,0.0,1,161,2,3.3461538461538463,0,MOCK-482,Redesign settings panel UI #482
+Sub-task,4480f38d3f0f,288000.0,1,319,9,3.3461538461538463,0,MOCK-483,Implement feature flagging system #483
+Sub-task,e9842a5fa0c6,14400.0,1,48,1,3.3461538461538463,0,MOCK-484,Implement feature flagging system #484
+Sub-task,582ddb60581d,28800.0,1,132,5,3.3461538461538463,1,MOCK-485,Improve accessibility features #485
+Sub-task,ca1a22a11536,28800.0,1,216,8,3.3461538461538463,0,MOCK-486,Implement dark mode toggle #486
+Sub-task,1eead18cddc6,0.0,1,182,7,3.3461538461538463,1,MOCK-487,Implement dark mode toggle #487
+Sub-task,dd72a245185f,0.0,1,161,0,3.3461538461538463,1,MOCK-488,Enable offline data sync #488
+Sub-task,6447edd3e3f9,0.0,1,161,0,3.3461538461538463,1,MOCK-489,Implement dark mode toggle #489
+Sub-task,6447edd3e3f9,0.0,1,4,1,3.3461538461538463,0,MOCK-490,Optimize app startup time #490
+Task,dd72a245185f,0.0,1,26,3,3.3461538461538463,0,MOCK-491,Implement dark mode toggle #491
+Bug,6447edd3e3f9,0.0,1,20,2,3.3461538461538463,0,MOCK-492,Fix crash in notification handler #492
+Task,1eead18cddc6,0.0,1,20,0,3.3461538461538463,0,MOCK-493,Develop onboarding walkthrough #493
+Bug,dd72a245185f,0.0,1,18,7,3.3461538461538463,0,MOCK-494,Fix crash in notification handler #494
+Task,dd72a245185f,57600.0,1,16,4,3.3461538461538463,1,MOCK-495,Enable offline data sync #495
+Task,3351d8b754ac,0.0,1,12,0,3.3461538461538463,0,MOCK-496,Improve accessibility features #496
+Task,ca1a22a11536,288000.0,1,12,2,3.3461538461538463,1,MOCK-497,Redesign settings panel UI #497
+Bug,4480f38d3f0f,0.0,1,26,3,3.3461538461538463,0,MOCK-498,Fix crash in notification handler #498
+Bug,1eead18cddc6,0.0,1,26,4,3.3461538461538463,0,MOCK-499,Develop onboarding walkthrough #499
+Bug,3351d8b754ac,0.0,1,59,24,3.3461538461538463,0,MOCK-500,Enable offline data sync #500
+Bug,dd72a245185f,0.0,1,35,10,3.3461538461538463,0,MOCK-501,Integrate third-party analytics SDK #501
+Task,6447edd3e3f9,0.0,1,11,0,3.3461538461538463,0,MOCK-502,Patch issue in navigation stack #502
+Task,3351d8b754ac,0.0,1,10,2,3.3461538461538463,0,MOCK-503,Develop onboarding walkthrough #503
+Bug,3351d8b754ac,0.0,1,28,8,3.3461538461538463,0,MOCK-504,Enable offline data sync #504
+Bug,6447edd3e3f9,0.0,1,38,7,3.3461538461538463,0,MOCK-505,Optimize app startup time #505
+Task,e9842a5fa0c6,0.0,1,5,3,3.3461538461538463,0,MOCK-506,Develop onboarding walkthrough #506

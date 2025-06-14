@@ -4,6 +4,7 @@ import pandas as pd
 from requests.auth import HTTPBasicAuth
 import time
 from typing import Optional, List, Dict, Any
+import hashlib
 
 class JiraClient:
     """
@@ -126,6 +127,12 @@ class JiraClient:
         data = self._make_request('GET', url, params={"maxResults": 100})
         return data.get("issues", [])
 
+    def hash_display_name(self, name):
+        if name is None:
+            return None
+        # Truncate SHA-256 to first 12 hex digits
+        return hashlib.sha256(name.encode('utf-8')).hexdigest()[:12]
+
     def parse_issue(self, issue: Dict[str, Any], sprint_end: Optional[pd.Timestamp]) -> Dict[str, Any]:
         """
         Convert a Jira task into a format our machine learning model can use.
@@ -141,13 +148,15 @@ class JiraClient:
             # Check if the task was completed
             status_name = fields["status"]["name"].lower()
             is_closed = status_name in ["done", "closed", "resolved"]
+            # Use truncated SHA-256 hash of displayName for anonymized assignee
+            assignee_hash = self.hash_display_name(fields["assignee"]["displayName"]) if fields["assignee"] else None
             
             # Create a dictionary with all the information we need
             return {
                 "key": issue["key"],
                 "summary": fields.get("summary", ""),
                 "original_estimate": original_estimate if original_estimate else None,
-                "assignee": fields["assignee"]["displayName"] if fields["assignee"] else None,
+                "assignee": assignee_hash,
                 "issue_type": fields["issuetype"]["name"],
                 "comment_count": fields["comment"]["total"],
                 "created": created,
