@@ -2,7 +2,8 @@ import sys
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, 
     QLabel, QTableWidget, QTableWidgetItem, QFileDialog, QMessageBox, 
-    QTextEdit, QGroupBox, QSizePolicy, QInputDialog, QDialog, QProgressBar
+    QTextEdit, QGroupBox, QSizePolicy, QInputDialog, QDialog, QProgressBar,
+    QComboBox
 )
 from PyQt5.QtGui import QFont
 from src.model import SprintSuccessModel
@@ -65,6 +66,21 @@ class MainWindow(QWidget):
         self.progress_bar.setVisible(False)
         self.layout.addWidget(self.progress_bar)
 
+        # Add model selection dropdown
+        model_layout = QHBoxLayout()
+        model_label = QLabel("Select Model:")
+        self.model_combo = QComboBox()
+        self.model_combo.addItems(["Random Forest", "XGBoost", "Neural Network", "LightGBM"])
+        self.model_combo.currentTextChanged.connect(self.on_model_changed)
+        model_layout.addWidget(model_label)
+        model_layout.addWidget(self.model_combo)
+        model_layout.addStretch()
+        self.layout.addLayout(model_layout)
+        
+        # Initialize model
+        self.model = None
+        self.on_model_changed()
+
         # Add labels to show what data is loaded
         self.info_layout = QHBoxLayout()
         self.train_label = QLabel('No training data loaded')
@@ -110,6 +126,19 @@ class MainWindow(QWidget):
 
         self.layout.addLayout(self.split_layout)
         self.setLayout(self.layout)
+
+    def on_model_changed(self):
+        """Handle model type change."""
+        model_map = {
+            "Random Forest": "random_forest",
+            "XGBoost": "xgboost",
+            "Neural Network": "mlp",
+            "LightGBM": "lightgbm"
+        }
+        model_type = model_map[self.model_combo.currentText()]
+        self.model = SprintSuccessModel(model_type=model_type)
+        if hasattr(self, 'X') and hasattr(self, 'y'):
+            self.train_model()  # Retrain with new model type
 
     def check_jira_config(self):
         """Check if we have all the required Jira login information"""
@@ -164,7 +193,6 @@ You can set these in a .env file or in your system environment variables."""
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
             
             # Create and train the model
-            self.model = SprintSuccessModel()
             self.model.train(X_train, y_train)
             
             # Show how well the model performs
