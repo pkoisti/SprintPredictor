@@ -28,16 +28,19 @@ However, this critical step often faces several challenges:
 
 The application can be used in two ways:
 
-1. **Demo** - Works with CSV files:
+**Demo** - Works with CSV files:
    - Use the included `mock_data.csv` file to try out the application
    - Train the model and make predictions using CSV files
    - View predictions and model performance metrics
    - No Jira setup required
+   - Use the "Train Model from CSV" button to load `mock_data.csv`
+   - Use the "Predict from CSV" button to make predictions
 
-2. **Jira Integration** - For teams using Jira:
+**Jira Integration** - For teams using Jira:
    - Train the model with your team's historical sprint data
    - Get predictions for new sprint issues
    - Requires Jira credentials and API access
+
 
 <img src="assets/screenshot.png" alt="Screenshot of Sprint Success Predictor app interface" width="800"/>
 
@@ -49,37 +52,44 @@ The application can be used in two ways:
 - 🖥️ Desktop GUI application
 - 🔄 Optional Jira integration
 
+
 ## Data and AI techniques
 
 The provided application uses two types of data:
 1. CSV files
    - Use the included `mock_data.csv` for testing
    - Create your own CSV files with the same format
+
+   #### Data Format
+      The application expects CSV files with the following columns:
+      - `issue_type`: Type of the issue (Task, Bug, Story, etc.)
+      - `assignee`: Hashed identifier of the assignee
+      - `original_estimate`: Time estimate for task in seconds
+      - `was_in_previous_sprint`: Whether the task was in a previous sprint (0 or 1)
+      - `days_in_sprint`: Number of days the task has been in the sprint
+      - `comment_count`: Number of comments on the issue
+      - `tasks_per_assignee`: Average number of tasks assigned to one person in the sprint
+      - `sprint_success`: Whether the task was completed (only for training csv)
+      - `key`: Issue key (only for predict csv)
+      - `summary`: Issue summary (only for predict csv)
+
 2. Jira data (optional)
    - Requires Jira credentials
    - Fetches data from your Jira instance
    - Option to save fetched data into CSV for later use
 
-The AI model uses the following features:
+The model is trained on historical sprint data and can predict the probability of task completion. You can choose between four different machine learning models:
 
-| Feature | Description |
-| ------- | ----------- |
-| Original Estimate | Initial time estimate for the task |
-| Sprint History | Whether the task was in a previous sprint |
-| Issue Type | Type of the task (Story, Bug, etc.) |
-| Assignee Load | Number of tasks per assignee |
-| Issue Age at Sprint End | Days between issue creation and sprint end |
-| Activity Level | Comment count |
+1. **Random Forest**: A tree-based model that's good for understanding feature importance
+2. **XGBoost**: A gradient boosting model that often provides high prediction accuracy
+3. **Neural Network**: A deep learning model that can capture complex patterns
+4. **LightGBM**: A fast gradient boosting framework that's efficient with large datasets
 
-The core of the prediction engine is a Random Forest Classifier from scikit-learn, chosen for its:
-- Ability to handle both numerical and categorical features
-- Feature importance insights
-- Robust performance with limited data
-- Resistance to overfitting
+You can switch between models using the dropdown menu in the application interface. 
 
 ## Challenges
 
-This project does not account for unexpected disruptions such as team illness, changing priorities, or external dependencies. It relies on historical data, which may reinforce existing biases or outdated practices. The model cannot assess task complexity or human factors like motivation or collaboration. It supports, but does not replace, human judgment in sprint planning. Its effectiveness also depends on the quality and consistency of Jira data.
+This project does not account for unexpected disruptions such as team illness, changing priorities, or external dependencies. Prediction relies on historical data, which may reinforce existing biases or outdated practices. The model cannot assess task complexity or human factors like motivation or collaboration. It supports, but does not replace, human judgment in sprint planning. Its effectiveness also depends on the quality and consistency of Jira data.
 
 ## What next?
 
@@ -97,7 +107,6 @@ Future development possibilities:
 
 ### Prerequisites
 - Python 3.8 or higher
-- PyQt5 for the desktop interface
 
 ### Quick Start 
 
@@ -123,9 +132,6 @@ pip install -r requirements.txt
 python desktop_app.py
 ```
 
-5. Use the "Train Model from CSV" button to load `mock_data.csv`
-6. Use the "Predict from CSV" button to make predictions
-
 ### Optional: Jira Integration
 
 To enable Jira integration, create a .env file containing your credentials and place it in the project root directory:
@@ -140,7 +146,7 @@ JIRA_PROJECT_KEY=YOUR_PROJECT  # Optional: limit to specific project
 
 ```
 SprintPredictor/
-├── assets/                # UI assets
+├── assets/                # project assets
 ├── data/                  # Sample and user data
 ├── src/                   # Source code modules
 │   ├── data_processing.py
@@ -149,6 +155,7 @@ SprintPredictor/
 ├── desktop_app.py         # Main application script
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation
+├── LICENSE                
 └── .env                   # Place for Jira credentials (not included in repo)
 ```
 
